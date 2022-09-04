@@ -1,0 +1,3863 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_958b2c3e6c4da09cb0a996476758de9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_958b2c3e6c4da09cb0a996476758de9c" ></div>
+        
+</body>
+<script>    
+    
+            var map_958b2c3e6c4da09cb0a996476758de9c = L.map(
+                "map_958b2c3e6c4da09cb0a996476758de9c",
+                {
+                    center: [51.5, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_38a091f339f0e95bac74162c0cbdaf4f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+            var marker_fa3de7d509f54f8075f5d863140bd0e9 = L.marker(
+                [51.505549, -0.273279],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e956d103398c5fb64062607f1b726f9c = L.popup({"maxWidth": 450});
+
+        
+            var html_78c8f1beead85a050005e68671dd0ff2 = $(`<div id="html_78c8f1beead85a050005e68671dd0ff2" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_e956d103398c5fb64062607f1b726f9c.setContent(html_78c8f1beead85a050005e68671dd0ff2);
+        
+
+        marker_fa3de7d509f54f8075f5d863140bd0e9.bindPopup(popup_e956d103398c5fb64062607f1b726f9c)
+        ;
+
+        
+    
+    
+            var marker_7fe9070d31dbf28580a587529a7095a3 = L.marker(
+                [51.547296, -0.132116],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_be6b89826299862f6f379ca0f7eb0eaa = L.popup({"maxWidth": 450});
+
+        
+            var html_98e3b724f6575c2209fb6c06afb853c3 = $(`<div id="html_98e3b724f6575c2209fb6c06afb853c3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_be6b89826299862f6f379ca0f7eb0eaa.setContent(html_98e3b724f6575c2209fb6c06afb853c3);
+        
+
+        marker_7fe9070d31dbf28580a587529a7095a3.bindPopup(popup_be6b89826299862f6f379ca0f7eb0eaa)
+        ;
+
+        
+    
+    
+            var marker_08b7fbb65462426488ae57c00bfb75c9 = L.marker(
+                [51.396344, -0.285515],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9ab2def7998fce4a0f6809c1c64c12b3 = L.popup({"maxWidth": 450});
+
+        
+            var html_2b70584d0b57eabe364dcffe187048d7 = $(`<div id="html_2b70584d0b57eabe364dcffe187048d7" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.77<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_9ab2def7998fce4a0f6809c1c64c12b3.setContent(html_2b70584d0b57eabe364dcffe187048d7);
+        
+
+        marker_08b7fbb65462426488ae57c00bfb75c9.bindPopup(popup_9ab2def7998fce4a0f6809c1c64c12b3)
+        ;
+
+        
+    
+    
+            var marker_e6dd4e5e1fd88af9984700eaeb3e956b = L.marker(
+                [51.507917, -0.443789],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0454b15998e4c928a3c16bc2e91495b9 = L.popup({"maxWidth": 450});
+
+        
+            var html_4806cdcdbe72f57397b879ee91e81f0f = $(`<div id="html_4806cdcdbe72f57397b879ee91e81f0f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.73<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_0454b15998e4c928a3c16bc2e91495b9.setContent(html_4806cdcdbe72f57397b879ee91e81f0f);
+        
+
+        marker_e6dd4e5e1fd88af9984700eaeb3e956b.bindPopup(popup_0454b15998e4c928a3c16bc2e91495b9)
+        ;
+
+        
+    
+    
+            var marker_d21ee3979f9d03c3545eaff66e258a22 = L.marker(
+                [51.570861, -0.02158],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_cce0271715feb81d22c542c60d6da1c2 = L.popup({"maxWidth": 450});
+
+        
+            var html_f9c3a0adb8e98c7be93ecffba7b49015 = $(`<div id="html_f9c3a0adb8e98c7be93ecffba7b49015" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_cce0271715feb81d22c542c60d6da1c2.setContent(html_f9c3a0adb8e98c7be93ecffba7b49015);
+        
+
+        marker_d21ee3979f9d03c3545eaff66e258a22.bindPopup(popup_cce0271715feb81d22c542c60d6da1c2)
+        ;
+
+        
+    
+    
+            var marker_f257dbf1ac97084f127f4489cb5253c2 = L.marker(
+                [51.594638, -0.151224],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ff921a1184730a4d95689a4b7d4b2ac7 = L.popup({"maxWidth": 450});
+
+        
+            var html_12b8468034c777a0331de2dc3b13e48a = $(`<div id="html_12b8468034c777a0331de2dc3b13e48a" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_ff921a1184730a4d95689a4b7d4b2ac7.setContent(html_12b8468034c777a0331de2dc3b13e48a);
+        
+
+        marker_f257dbf1ac97084f127f4489cb5253c2.bindPopup(popup_ff921a1184730a4d95689a4b7d4b2ac7)
+        ;
+
+        
+    
+    
+            var marker_c25629de5048c34ad26d8f9ba84e0206 = L.marker(
+                [51.451637, 0.002205],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_93d486067ac095f7449a8809005bcfaa = L.popup({"maxWidth": 450});
+
+        
+            var html_018ca946df18e402efe893335faf129c = $(`<div id="html_018ca946df18e402efe893335faf129c" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_93d486067ac095f7449a8809005bcfaa.setContent(html_018ca946df18e402efe893335faf129c);
+        
+
+        marker_c25629de5048c34ad26d8f9ba84e0206.bindPopup(popup_93d486067ac095f7449a8809005bcfaa)
+        ;
+
+        
+    
+    
+            var marker_631a357e2391ad59ed76580567d9b361 = L.marker(
+                [51.566569, 0.230257],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6627409e116c903ef7b5621faf6a85d3 = L.popup({"maxWidth": 450});
+
+        
+            var html_0d09d4f8ba98dc7fd59bd8acb7187250 = $(`<div id="html_0d09d4f8ba98dc7fd59bd8acb7187250" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.72<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_6627409e116c903ef7b5621faf6a85d3.setContent(html_0d09d4f8ba98dc7fd59bd8acb7187250);
+        
+
+        marker_631a357e2391ad59ed76580567d9b361.bindPopup(popup_6627409e116c903ef7b5621faf6a85d3)
+        ;
+
+        
+    
+    
+            var marker_5b6130361b708bfebeee8a3d33751cb7 = L.marker(
+                [51.569191000000004, -0.112359],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_3c66c0c7ffc36605f3d67223d78a25c9 = L.popup({"maxWidth": 450});
+
+        
+            var html_16bda1097a481c73c529862ebc58b391 = $(`<div id="html_16bda1097a481c73c529862ebc58b391" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.63<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_3c66c0c7ffc36605f3d67223d78a25c9.setContent(html_16bda1097a481c73c529862ebc58b391);
+        
+
+        marker_5b6130361b708bfebeee8a3d33751cb7.bindPopup(popup_3c66c0c7ffc36605f3d67223d78a25c9)
+        ;
+
+        
+    
+    
+            var marker_44199c16a80c7d8041d607f6380b8262 = L.marker(
+                [51.455891, -0.120549],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_36bfe66495eba385c62b6bc3bcb73ebe = L.popup({"maxWidth": 450});
+
+        
+            var html_898fc09cfad13f87afb8e40377a82a27 = $(`<div id="html_898fc09cfad13f87afb8e40377a82a27" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.66<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_36bfe66495eba385c62b6bc3bcb73ebe.setContent(html_898fc09cfad13f87afb8e40377a82a27);
+        
+
+        marker_44199c16a80c7d8041d607f6380b8262.bindPopup(popup_36bfe66495eba385c62b6bc3bcb73ebe)
+        ;
+
+        
+    
+    
+            var marker_886d639ace6e457f282bcea3c15b8554 = L.marker(
+                [51.490106, 0.071176],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_cd3145437253ba0e350eb632d8697bf5 = L.popup({"maxWidth": 450});
+
+        
+            var html_aebd5ad3995b836561e89c1325d9bedc = $(`<div id="html_aebd5ad3995b836561e89c1325d9bedc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_cd3145437253ba0e350eb632d8697bf5.setContent(html_aebd5ad3995b836561e89c1325d9bedc);
+        
+
+        marker_886d639ace6e457f282bcea3c15b8554.bindPopup(popup_cd3145437253ba0e350eb632d8697bf5)
+        ;
+
+        
+    
+    
+            var marker_b06967110ce23dda0ebd34484d6899b9 = L.marker(
+                [51.44946, 0.054239],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b4fa30247e670431f38dceb8f31a3a19 = L.popup({"maxWidth": 450});
+
+        
+            var html_985306ee846eefaddd01aad776760355 = $(`<div id="html_985306ee846eefaddd01aad776760355" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.68<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_b4fa30247e670431f38dceb8f31a3a19.setContent(html_985306ee846eefaddd01aad776760355);
+        
+
+        marker_b06967110ce23dda0ebd34484d6899b9.bindPopup(popup_b4fa30247e670431f38dceb8f31a3a19)
+        ;
+
+        
+    
+    
+            var marker_3d4432e37a46b66c5eefd36e3bc77987 = L.marker(
+                [51.378196, -0.24356],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_dc33579917cc19e94ea15aa21532c35b = L.popup({"maxWidth": 450});
+
+        
+            var html_089cd28da9317f78b8169e50588e0b93 = $(`<div id="html_089cd28da9317f78b8169e50588e0b93" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.8<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_dc33579917cc19e94ea15aa21532c35b.setContent(html_089cd28da9317f78b8169e50588e0b93);
+        
+
+        marker_3d4432e37a46b66c5eefd36e3bc77987.bindPopup(popup_dc33579917cc19e94ea15aa21532c35b)
+        ;
+
+        
+    
+    
+            var marker_c0c967fa47d766e7f06d19db73709c6a = L.marker(
+                [51.56333, 0.011956],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c71aad03eadbcbeea37b46e5ad1e3d9d = L.popup({"maxWidth": 450});
+
+        
+            var html_9e074f04dd339ef8b3bba520caeee594 = $(`<div id="html_9e074f04dd339ef8b3bba520caeee594" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.7<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_c71aad03eadbcbeea37b46e5ad1e3d9d.setContent(html_9e074f04dd339ef8b3bba520caeee594);
+        
+
+        marker_c0c967fa47d766e7f06d19db73709c6a.bindPopup(popup_c71aad03eadbcbeea37b46e5ad1e3d9d)
+        ;
+
+        
+    
+    
+            var marker_991a1096de0578f11a51571e2b032350 = L.marker(
+                [51.397646, -0.301409],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_20ebbd879162f1149ccad772ec1dd986 = L.popup({"maxWidth": 450});
+
+        
+            var html_fc725af5fd77f39e15badb003baad133 = $(`<div id="html_fc725af5fd77f39e15badb003baad133" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.93<br><b>Safety degree</b>: excellent<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_20ebbd879162f1149ccad772ec1dd986.setContent(html_fc725af5fd77f39e15badb003baad133);
+        
+
+        marker_991a1096de0578f11a51571e2b032350.bindPopup(popup_20ebbd879162f1149ccad772ec1dd986)
+        ;
+
+        
+    
+    
+            var marker_174fea32a4e47b34dd8df988edc814f3 = L.marker(
+                [51.601972, 0.215659],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_229d47172d3e446bd38b82ea659fe903 = L.popup({"maxWidth": 450});
+
+        
+            var html_9bdc52664961a5a233f78e9e76039725 = $(`<div id="html_9bdc52664961a5a233f78e9e76039725" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.63<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_229d47172d3e446bd38b82ea659fe903.setContent(html_9bdc52664961a5a233f78e9e76039725);
+        
+
+        marker_174fea32a4e47b34dd8df988edc814f3.bindPopup(popup_229d47172d3e446bd38b82ea659fe903)
+        ;
+
+        
+    
+    
+            var marker_619e6254d18bfa52fd7b9bb62753d280 = L.marker(
+                [51.469013, -0.027616],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a66e319c1d0d7ca7002046d262f30b51 = L.popup({"maxWidth": 450});
+
+        
+            var html_142a5cb306dd0c5950239355e5229edc = $(`<div id="html_142a5cb306dd0c5950239355e5229edc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_a66e319c1d0d7ca7002046d262f30b51.setContent(html_142a5cb306dd0c5950239355e5229edc);
+        
+
+        marker_619e6254d18bfa52fd7b9bb62753d280.bindPopup(popup_a66e319c1d0d7ca7002046d262f30b51)
+        ;
+
+        
+    
+    
+            var marker_0c4eafdb9698150f19830a9706f75aa3 = L.marker(
+                [51.410101, -0.148842],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_db5b2e3fbd0d58a33bce0a345bb6ca51 = L.popup({"maxWidth": 450});
+
+        
+            var html_454fd4fd0fe14044142b49738cdad366 = $(`<div id="html_454fd4fd0fe14044142b49738cdad366" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.63<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_db5b2e3fbd0d58a33bce0a345bb6ca51.setContent(html_454fd4fd0fe14044142b49738cdad366);
+        
+
+        marker_0c4eafdb9698150f19830a9706f75aa3.bindPopup(popup_db5b2e3fbd0d58a33bce0a345bb6ca51)
+        ;
+
+        
+    
+    
+            var marker_42afc64dae88911e0b2d66a1a40db0fb = L.marker(
+                [51.504447, -0.33074],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_49069e6b39a69be6c8724ed84315c483 = L.popup({"maxWidth": 450});
+
+        
+            var html_670af2f5c4d6cccbc524e88bc6f3675f = $(`<div id="html_670af2f5c4d6cccbc524e88bc6f3675f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_49069e6b39a69be6c8724ed84315c483.setContent(html_670af2f5c4d6cccbc524e88bc6f3675f);
+        
+
+        marker_42afc64dae88911e0b2d66a1a40db0fb.bindPopup(popup_49069e6b39a69be6c8724ed84315c483)
+        ;
+
+        
+    
+    
+            var marker_ed2c127d2d149c9333d9103739877855 = L.marker(
+                [51.385323, 0.095833],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1b1498e263653fb35b1a539f48bb63cd = L.popup({"maxWidth": 450});
+
+        
+            var html_2fcba47905f857511fb1217ef6a55039 = $(`<div id="html_2fcba47905f857511fb1217ef6a55039" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.65<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_1b1498e263653fb35b1a539f48bb63cd.setContent(html_2fcba47905f857511fb1217ef6a55039);
+        
+
+        marker_ed2c127d2d149c9333d9103739877855.bindPopup(popup_1b1498e263653fb35b1a539f48bb63cd)
+        ;
+
+        
+    
+    
+            var marker_43199c2b0ce9a9eb34a212afbcd089cd = L.marker(
+                [51.388826, -0.003269],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b44d17679cda66e7fe437cbc35388d5b = L.popup({"maxWidth": 450});
+
+        
+            var html_65b969018591298b47691cf9d08b400d = $(`<div id="html_65b969018591298b47691cf9d08b400d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.8<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_b44d17679cda66e7fe437cbc35388d5b.setContent(html_65b969018591298b47691cf9d08b400d);
+        
+
+        marker_43199c2b0ce9a9eb34a212afbcd089cd.bindPopup(popup_b44d17679cda66e7fe437cbc35388d5b)
+        ;
+
+        
+    
+    
+            var marker_a4a7e2c5c6c2bb4db9b95416ca2c8754 = L.marker(
+                [51.550841, -0.297729],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_55421e985ffb12f17847baa19aff7f1d = L.popup({"maxWidth": 450});
+
+        
+            var html_7d4e75fabbf1324dca1c33ae25fda06e = $(`<div id="html_7d4e75fabbf1324dca1c33ae25fda06e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.5<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_55421e985ffb12f17847baa19aff7f1d.setContent(html_7d4e75fabbf1324dca1c33ae25fda06e);
+        
+
+        marker_a4a7e2c5c6c2bb4db9b95416ca2c8754.bindPopup(popup_55421e985ffb12f17847baa19aff7f1d)
+        ;
+
+        
+    
+    
+            var marker_263f33de4827af08b2279d7b8de82f6b = L.marker(
+                [51.544311, -0.136709],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_d087343ff5c97f253231a0df303efdea = L.popup({"maxWidth": 450});
+
+        
+            var html_7267af4d878f6da76f29222faeba299f = $(`<div id="html_7267af4d878f6da76f29222faeba299f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.57<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_d087343ff5c97f253231a0df303efdea.setContent(html_7267af4d878f6da76f29222faeba299f);
+        
+
+        marker_263f33de4827af08b2279d7b8de82f6b.bindPopup(popup_d087343ff5c97f253231a0df303efdea)
+        ;
+
+        
+    
+    
+            var marker_d4188f0d29964f7923d348b1079039c7 = L.marker(
+                [51.409969, 0.019754],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_653039a07f32b7b38f6bce007d240735 = L.popup({"maxWidth": 450});
+
+        
+            var html_ee45b819f9086dad4c5e8a768ab04e01 = $(`<div id="html_ee45b819f9086dad4c5e8a768ab04e01" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.95<br><b>Safety degree</b>: excellent<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_653039a07f32b7b38f6bce007d240735.setContent(html_ee45b819f9086dad4c5e8a768ab04e01);
+        
+
+        marker_d4188f0d29964f7923d348b1079039c7.bindPopup(popup_653039a07f32b7b38f6bce007d240735)
+        ;
+
+        
+    
+    
+            var marker_6a7e98f5a6956ed0a0485d18ef743b55 = L.marker(
+                [51.357422, -0.201366],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9d5a2f06c6fa1448239653953200e857 = L.popup({"maxWidth": 450});
+
+        
+            var html_f456e43ec4994c3b717cb9386fa352e4 = $(`<div id="html_f456e43ec4994c3b717cb9386fa352e4" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.97<br><b>Safety degree</b>: excellent<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_9d5a2f06c6fa1448239653953200e857.setContent(html_f456e43ec4994c3b717cb9386fa352e4);
+        
+
+        marker_6a7e98f5a6956ed0a0485d18ef743b55.bindPopup(popup_9d5a2f06c6fa1448239653953200e857)
+        ;
+
+        
+    
+    
+            var marker_e8ad41db5cc555084dadb94efe308161 = L.marker(
+                [51.517832, -0.361008],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_d4003b817e69b2b8b4c430ccaac23dd2 = L.popup({"maxWidth": 450});
+
+        
+            var html_bcf0cd8754331f1aac806d48b5f7b9a4 = $(`<div id="html_bcf0cd8754331f1aac806d48b5f7b9a4" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.4<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_d4003b817e69b2b8b4c430ccaac23dd2.setContent(html_bcf0cd8754331f1aac806d48b5f7b9a4);
+        
+
+        marker_e8ad41db5cc555084dadb94efe308161.bindPopup(popup_d4003b817e69b2b8b4c430ccaac23dd2)
+        ;
+
+        
+    
+    
+            var marker_6d6c8c0d4cb1a528db10f680a7f62719 = L.marker(
+                [51.569988, -0.404154],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1a3a2b2aceac13f5016d5f051d41828b = L.popup({"maxWidth": 450});
+
+        
+            var html_b6bb975a9941922d395147a6b2f74598 = $(`<div id="html_b6bb975a9941922d395147a6b2f74598" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_1a3a2b2aceac13f5016d5f051d41828b.setContent(html_b6bb975a9941922d395147a6b2f74598);
+        
+
+        marker_6d6c8c0d4cb1a528db10f680a7f62719.bindPopup(popup_1a3a2b2aceac13f5016d5f051d41828b)
+        ;
+
+        
+    
+    
+            var marker_abf7cf643f91c9cac6ba222bcbc0cb3a = L.marker(
+                [51.466393, -0.058669],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_500873fce5a6968d09699f9184e38bce = L.popup({"maxWidth": 450});
+
+        
+            var html_5f0fbdd9393d4d4f81c4bcc9b69ed601 = $(`<div id="html_5f0fbdd9393d4d4f81c4bcc9b69ed601" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_500873fce5a6968d09699f9184e38bce.setContent(html_5f0fbdd9393d4d4f81c4bcc9b69ed601);
+        
+
+        marker_abf7cf643f91c9cac6ba222bcbc0cb3a.bindPopup(popup_500873fce5a6968d09699f9184e38bce)
+        ;
+
+        
+    
+    
+            var marker_96480675a47a99702a0dbdf6087a6f7f = L.marker(
+                [51.308918, 0.037295],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c9afc2329704855f699e086c2ae73d86 = L.popup({"maxWidth": 450});
+
+        
+            var html_2fe6c0a8ac8cecf98a0f3a4f951dcc6a = $(`<div id="html_2fe6c0a8ac8cecf98a0f3a4f951dcc6a" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_c9afc2329704855f699e086c2ae73d86.setContent(html_2fe6c0a8ac8cecf98a0f3a4f951dcc6a);
+        
+
+        marker_96480675a47a99702a0dbdf6087a6f7f.bindPopup(popup_c9afc2329704855f699e086c2ae73d86)
+        ;
+
+        
+    
+    
+            var marker_d6301192ba8fbc511b213dffbf4a763e = L.marker(
+                [51.590656, -0.066513],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ef363c292c47f00da677bdc66ba944fd = L.popup({"maxWidth": 450});
+
+        
+            var html_4dae0bd1f2954b6b740c6ec63b60f8ee = $(`<div id="html_4dae0bd1f2954b6b740c6ec63b60f8ee" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.52<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_ef363c292c47f00da677bdc66ba944fd.setContent(html_4dae0bd1f2954b6b740c6ec63b60f8ee);
+        
+
+        marker_d6301192ba8fbc511b213dffbf4a763e.bindPopup(popup_ef363c292c47f00da677bdc66ba944fd)
+        ;
+
+        
+    
+    
+            var marker_f1bc489cd1f5be07e4e20fef506f1774 = L.marker(
+                [51.460145, 0.093256],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_89eb60b44f2065e6dc44ed56c9cf1b20 = L.popup({"maxWidth": 450});
+
+        
+            var html_da48a1f3efc57ccd204f2a841d473618 = $(`<div id="html_da48a1f3efc57ccd204f2a841d473618" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.82<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_89eb60b44f2065e6dc44ed56c9cf1b20.setContent(html_da48a1f3efc57ccd204f2a841d473618);
+        
+
+        marker_f1bc489cd1f5be07e4e20fef506f1774.bindPopup(popup_89eb60b44f2065e6dc44ed56c9cf1b20)
+        ;
+
+        
+    
+    
+            var marker_2bf7459e1e26a1814f4ef82182dd13e5 = L.marker(
+                [51.534201, 0.064887],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_61ec50c589e72c4c55ef646ebe383373 = L.popup({"maxWidth": 450});
+
+        
+            var html_d1eb47406470b00a7f06f8d50081ee72 = $(`<div id="html_d1eb47406470b00a7f06f8d50081ee72" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.73<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_61ec50c589e72c4c55ef646ebe383373.setContent(html_d1eb47406470b00a7f06f8d50081ee72);
+        
+
+        marker_2bf7459e1e26a1814f4ef82182dd13e5.bindPopup(popup_61ec50c589e72c4c55ef646ebe383373)
+        ;
+
+        
+    
+    
+            var marker_dced343c122bbde60f4af52ba7c6ca6b = L.marker(
+                [51.387833, 0.10184],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ed1a2d1d2df98daaa1e61b77579d75e7 = L.popup({"maxWidth": 450});
+
+        
+            var html_2e1bcf44658d2e3c80a4099b6299e90a = $(`<div id="html_2e1bcf44658d2e3c80a4099b6299e90a" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.8<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_ed1a2d1d2df98daaa1e61b77579d75e7.setContent(html_2e1bcf44658d2e3c80a4099b6299e90a);
+        
+
+        marker_dced343c122bbde60f4af52ba7c6ca6b.bindPopup(popup_ed1a2d1d2df98daaa1e61b77579d75e7)
+        ;
+
+        
+    
+    
+            var marker_bbd8e82889b021eba92d4b6495bfaecc = L.marker(
+                [51.552003, -0.120585],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2d798223ef460d6db67f84a89f4f51aa = L.popup({"maxWidth": 450});
+
+        
+            var html_68c7fbc207cb141f78a87c911ecd740e = $(`<div id="html_68c7fbc207cb141f78a87c911ecd740e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.66<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_2d798223ef460d6db67f84a89f4f51aa.setContent(html_68c7fbc207cb141f78a87c911ecd740e);
+        
+
+        marker_bbd8e82889b021eba92d4b6495bfaecc.bindPopup(popup_2d798223ef460d6db67f84a89f4f51aa)
+        ;
+
+        
+    
+    
+            var marker_7763d46b935454534c572bba24000ac9 = L.marker(
+                [51.601833, 0.155492],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_17b379de87c06a7a55badd921934f0dc = L.popup({"maxWidth": 450});
+
+        
+            var html_3cfc6247880ecc88f7340022b9f6e23f = $(`<div id="html_3cfc6247880ecc88f7340022b9f6e23f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.58<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_17b379de87c06a7a55badd921934f0dc.setContent(html_3cfc6247880ecc88f7340022b9f6e23f);
+        
+
+        marker_7763d46b935454534c572bba24000ac9.bindPopup(popup_17b379de87c06a7a55badd921934f0dc)
+        ;
+
+        
+    
+    
+            var marker_335b1d25fc443362a46629f7fe7d486a = L.marker(
+                [51.402883, -0.264856],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e542fa4ce509ff92e543d5e7f36cdbce = L.popup({"maxWidth": 450});
+
+        
+            var html_041eec42825ee299beb3a3b40f0fbccb = $(`<div id="html_041eec42825ee299beb3a3b40f0fbccb" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_e542fa4ce509ff92e543d5e7f36cdbce.setContent(html_041eec42825ee299beb3a3b40f0fbccb);
+        
+
+        marker_335b1d25fc443362a46629f7fe7d486a.bindPopup(popup_e542fa4ce509ff92e543d5e7f36cdbce)
+        ;
+
+        
+    
+    
+            var marker_d5e7c51ba97fd7b0388d9d05ee24b69f = L.marker(
+                [51.512281, -0.040188],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_470e49acb4df38ad31027430b490bd37 = L.popup({"maxWidth": 450});
+
+        
+            var html_2ae208adaf467e1f38409f7bc9d5ec69 = $(`<div id="html_2ae208adaf467e1f38409f7bc9d5ec69" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_470e49acb4df38ad31027430b490bd37.setContent(html_2ae208adaf467e1f38409f7bc9d5ec69);
+        
+
+        marker_d5e7c51ba97fd7b0388d9d05ee24b69f.bindPopup(popup_470e49acb4df38ad31027430b490bd37)
+        ;
+
+        
+    
+    
+            var marker_2ae5b5f2af1d0865d93ef32ede076b18 = L.marker(
+                [51.470961, -0.040822],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ef23aa513f4f19565e1762a641c8b088 = L.popup({"maxWidth": 450});
+
+        
+            var html_851d0b4bba93690aa83b5f3b8eaad31b = $(`<div id="html_851d0b4bba93690aa83b5f3b8eaad31b" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_ef23aa513f4f19565e1762a641c8b088.setContent(html_851d0b4bba93690aa83b5f3b8eaad31b);
+        
+
+        marker_2ae5b5f2af1d0865d93ef32ede076b18.bindPopup(popup_ef23aa513f4f19565e1762a641c8b088)
+        ;
+
+        
+    
+    
+            var marker_a87231792eb9a60ee760269f4d84663e = L.marker(
+                [51.404718, -0.01556],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2bbdbfbc045244dcd338bc8dd2a4abe6 = L.popup({"maxWidth": 450});
+
+        
+            var html_6c4e78e01538edf0eeb9f2b21f58b78d = $(`<div id="html_6c4e78e01538edf0eeb9f2b21f58b78d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.77<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_2bbdbfbc045244dcd338bc8dd2a4abe6.setContent(html_6c4e78e01538edf0eeb9f2b21f58b78d);
+        
+
+        marker_a87231792eb9a60ee760269f4d84663e.bindPopup(popup_2bbdbfbc045244dcd338bc8dd2a4abe6)
+        ;
+
+        
+    
+    
+            var marker_79114cc4cd15618b6f7c01e46c1b832b = L.marker(
+                [51.569026, -0.094372],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6f9ad5403d166d9a4d82181908edcf05 = L.popup({"maxWidth": 450});
+
+        
+            var html_bef004225f518296f2fdeba15c07a2a4 = $(`<div id="html_bef004225f518296f2fdeba15c07a2a4" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_6f9ad5403d166d9a4d82181908edcf05.setContent(html_bef004225f518296f2fdeba15c07a2a4);
+        
+
+        marker_79114cc4cd15618b6f7c01e46c1b832b.bindPopup(popup_6f9ad5403d166d9a4d82181908edcf05)
+        ;
+
+        
+    
+    
+            var marker_44b69ece91d27455e36b222ba177eb98 = L.marker(
+                [51.36187, -0.150917],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a7722ebae5378bb143f88e99c0949171 = L.popup({"maxWidth": 450});
+
+        
+            var html_66e7a0ba0c86636fbd453d09f3bd0de9 = $(`<div id="html_66e7a0ba0c86636fbd453d09f3bd0de9" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.93<br><b>Safety degree</b>: excellent<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_a7722ebae5378bb143f88e99c0949171.setContent(html_66e7a0ba0c86636fbd453d09f3bd0de9);
+        
+
+        marker_44b69ece91d27455e36b222ba177eb98.bindPopup(popup_a7722ebae5378bb143f88e99c0949171)
+        ;
+
+        
+    
+    
+            var marker_1eef849a388f7c6ceeef8dd49c599960 = L.marker(
+                [51.443719, 0.019228],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ae657e8d29032441057d2ff3f660fb45 = L.popup({"maxWidth": 450});
+
+        
+            var html_6d74e75d8337ed120e5023eaea430ab2 = $(`<div id="html_6d74e75d8337ed120e5023eaea430ab2" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.82<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_ae657e8d29032441057d2ff3f660fb45.setContent(html_6d74e75d8337ed120e5023eaea430ab2);
+        
+
+        marker_1eef849a388f7c6ceeef8dd49c599960.bindPopup(popup_ae657e8d29032441057d2ff3f660fb45)
+        ;
+
+        
+    
+    
+            var marker_3d8c26e31aed56fcbf90abda284c4dcb = L.marker(
+                [51.612618, -0.065595],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_31700ea028f8379fa2b8b71e5cde30b2 = L.popup({"maxWidth": 450});
+
+        
+            var html_8bbe04dcf8b1f0cba0c47bc842e9e29f = $(`<div id="html_8bbe04dcf8b1f0cba0c47bc842e9e29f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.52<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_31700ea028f8379fa2b8b71e5cde30b2.setContent(html_8bbe04dcf8b1f0cba0c47bc842e9e29f);
+        
+
+        marker_3d8c26e31aed56fcbf90abda284c4dcb.bindPopup(popup_31700ea028f8379fa2b8b71e5cde30b2)
+        ;
+
+        
+    
+    
+            var marker_581c626ae321a2232042ba48bac47420 = L.marker(
+                [51.378819, -0.061242],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b0f22d57248d24f3377dede5e0170409 = L.popup({"maxWidth": 450});
+
+        
+            var html_e4d3f699ba9d0950a09829caccd8ed6f = $(`<div id="html_e4d3f699ba9d0950a09829caccd8ed6f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.92<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_b0f22d57248d24f3377dede5e0170409.setContent(html_e4d3f699ba9d0950a09829caccd8ed6f);
+        
+
+        marker_581c626ae321a2232042ba48bac47420.bindPopup(popup_b0f22d57248d24f3377dede5e0170409)
+        ;
+
+        
+    
+    
+            var marker_ad739b531a8a0232fd877076c0ab0b59 = L.marker(
+                [51.49393, -0.129573],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b6d954ead7664d9c045802a6605f15a1 = L.popup({"maxWidth": 450});
+
+        
+            var html_5597a93772fe047f483470330c594706 = $(`<div id="html_5597a93772fe047f483470330c594706" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_b6d954ead7664d9c045802a6605f15a1.setContent(html_5597a93772fe047f483470330c594706);
+        
+
+        marker_ad739b531a8a0232fd877076c0ab0b59.bindPopup(popup_b6d954ead7664d9c045802a6605f15a1)
+        ;
+
+        
+    
+    
+            var marker_31b6cf5d027253e6abf806fe7e3ff896 = L.marker(
+                [51.375616, -0.213298],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e1b42143bf69dc78af4939b599bd7d4d = L.popup({"maxWidth": 450});
+
+        
+            var html_4469dfbde343218063ef082cfe91e3f1 = $(`<div id="html_4469dfbde343218063ef082cfe91e3f1" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.89<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_e1b42143bf69dc78af4939b599bd7d4d.setContent(html_4469dfbde343218063ef082cfe91e3f1);
+        
+
+        marker_31b6cf5d027253e6abf806fe7e3ff896.bindPopup(popup_e1b42143bf69dc78af4939b599bd7d4d)
+        ;
+
+        
+    
+    
+            var marker_a776d8cbf5edf44a4d72db5841838c39 = L.marker(
+                [51.530702, -0.143824],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_99e907723274f8e75ea752959249454b = L.popup({"maxWidth": 450});
+
+        
+            var html_a4de752b96735888d9a8a00a28676467 = $(`<div id="html_a4de752b96735888d9a8a00a28676467" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_99e907723274f8e75ea752959249454b.setContent(html_a4de752b96735888d9a8a00a28676467);
+        
+
+        marker_a776d8cbf5edf44a4d72db5841838c39.bindPopup(popup_99e907723274f8e75ea752959249454b)
+        ;
+
+        
+    
+    
+            var marker_86cf7fcd6d9e2c6918769e7fe99d14b1 = L.marker(
+                [51.493611, 0.074332],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_19825a38e08c779c2845a32d20c54f99 = L.popup({"maxWidth": 450});
+
+        
+            var html_af8a2161e83a5808a35024e9ea523c75 = $(`<div id="html_af8a2161e83a5808a35024e9ea523c75" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.63<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_19825a38e08c779c2845a32d20c54f99.setContent(html_af8a2161e83a5808a35024e9ea523c75);
+        
+
+        marker_86cf7fcd6d9e2c6918769e7fe99d14b1.bindPopup(popup_19825a38e08c779c2845a32d20c54f99)
+        ;
+
+        
+    
+    
+            var marker_790305ae2242a2582ea8a8375edc8f45 = L.marker(
+                [51.477757, -0.365152],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a30d56328e413ada39a9b2591ab6c36d = L.popup({"maxWidth": 450});
+
+        
+            var html_e0ce17e46cbec395bc4b2056ae034271 = $(`<div id="html_e0ce17e46cbec395bc4b2056ae034271" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.55<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_a30d56328e413ada39a9b2591ab6c36d.setContent(html_e0ce17e46cbec395bc4b2056ae034271);
+        
+
+        marker_790305ae2242a2582ea8a8375edc8f45.bindPopup(popup_a30d56328e413ada39a9b2591ab6c36d)
+        ;
+
+        
+    
+    
+            var marker_3075a757a1cee8f3b02bff52857af215 = L.marker(
+                [51.564831, 0.169455],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_25d65848cd9e087d825ebe93cc895e52 = L.popup({"maxWidth": 450});
+
+        
+            var html_7664ea15cae3338c6f3b7730add3d2d6 = $(`<div id="html_7664ea15cae3338c6f3b7730add3d2d6" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.71<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_25d65848cd9e087d825ebe93cc895e52.setContent(html_7664ea15cae3338c6f3b7730add3d2d6);
+        
+
+        marker_3075a757a1cee8f3b02bff52857af215.bindPopup(popup_25d65848cd9e087d825ebe93cc895e52)
+        ;
+
+        
+    
+    
+            var marker_c9b24085c9f56ad4889494c46607e3ca = L.marker(
+                [51.515853, -0.009883],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e5af3778d47d0a3e87be6b3e537b5a17 = L.popup({"maxWidth": 450});
+
+        
+            var html_dc77938f4b985a1a2ea604af27579703 = $(`<div id="html_dc77938f4b985a1a2ea604af27579703" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.37<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_e5af3778d47d0a3e87be6b3e537b5a17.setContent(html_dc77938f4b985a1a2ea604af27579703);
+        
+
+        marker_c9b24085c9f56ad4889494c46607e3ca.bindPopup(popup_e5af3778d47d0a3e87be6b3e537b5a17)
+        ;
+
+        
+    
+    
+            var marker_7c22a3949be34c984870dd3ba88ad40a = L.marker(
+                [51.398811, -0.242037],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_8b298f705fb0faa113055cabc48acbb4 = L.popup({"maxWidth": 450});
+
+        
+            var html_19f0d25217661dc96aedccc91d92866b = $(`<div id="html_19f0d25217661dc96aedccc91d92866b" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.71<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_8b298f705fb0faa113055cabc48acbb4.setContent(html_19f0d25217661dc96aedccc91d92866b);
+        
+
+        marker_7c22a3949be34c984870dd3ba88ad40a.bindPopup(popup_8b298f705fb0faa113055cabc48acbb4)
+        ;
+
+        
+    
+    
+            var marker_146e22f5b4a85829239ba3d8be3f43e9 = L.marker(
+                [51.404139, -0.270128],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e96331ca27fb996b6b1cc5dfa3434938 = L.popup({"maxWidth": 450});
+
+        
+            var html_3510d6a1545379c777ca5ce714515a93 = $(`<div id="html_3510d6a1545379c777ca5ce714515a93" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.97<br><b>Safety degree</b>: excellent<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_e96331ca27fb996b6b1cc5dfa3434938.setContent(html_3510d6a1545379c777ca5ce714515a93);
+        
+
+        marker_146e22f5b4a85829239ba3d8be3f43e9.bindPopup(popup_e96331ca27fb996b6b1cc5dfa3434938)
+        ;
+
+        
+    
+    
+            var marker_c52bf56eb093839bb2fef2c98aa366dc = L.marker(
+                [51.579057, 0.127756],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e3672947aa9efc0a8f4750807fa42133 = L.popup({"maxWidth": 450});
+
+        
+            var html_88dd3ab6c7618c06a1c8a243c711d74e = $(`<div id="html_88dd3ab6c7618c06a1c8a243c711d74e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.74<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_e3672947aa9efc0a8f4750807fa42133.setContent(html_88dd3ab6c7618c06a1c8a243c711d74e);
+        
+
+        marker_c52bf56eb093839bb2fef2c98aa366dc.bindPopup(popup_e3672947aa9efc0a8f4750807fa42133)
+        ;
+
+        
+    
+    
+            var marker_5cd2f024b3b67cabb267f7245ccf2903 = L.marker(
+                [51.49004, -0.073741],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_20a2c199096742e49b33b5a77578ce8d = L.popup({"maxWidth": 450});
+
+        
+            var html_cc28a5f2fb418bfdbd5ff82ffa1d759e = $(`<div id="html_cc28a5f2fb418bfdbd5ff82ffa1d759e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_20a2c199096742e49b33b5a77578ce8d.setContent(html_cc28a5f2fb418bfdbd5ff82ffa1d759e);
+        
+
+        marker_5cd2f024b3b67cabb267f7245ccf2903.bindPopup(popup_20a2c199096742e49b33b5a77578ce8d)
+        ;
+
+        
+    
+    
+            var marker_fca664aa8a0539b479d093e00d1a2bd8 = L.marker(
+                [51.47305, -0.362902],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_08241c3b18cfdd10fdc61ace3dc0b473 = L.popup({"maxWidth": 450});
+
+        
+            var html_cf2d2f044c7ab058996318494d3b0bc8 = $(`<div id="html_cf2d2f044c7ab058996318494d3b0bc8" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.58<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_08241c3b18cfdd10fdc61ace3dc0b473.setContent(html_cf2d2f044c7ab058996318494d3b0bc8);
+        
+
+        marker_fca664aa8a0539b479d093e00d1a2bd8.bindPopup(popup_08241c3b18cfdd10fdc61ace3dc0b473)
+        ;
+
+        
+    
+    
+            var marker_ec4ca95554c4320372c5f20cf000a7d9 = L.marker(
+                [51.535439, 0.023732],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b6872bf0903ad7e38d7355fc4426c160 = L.popup({"maxWidth": 450});
+
+        
+            var html_2b7f11e8200f93d4aac389eb944ff3fc = $(`<div id="html_2b7f11e8200f93d4aac389eb944ff3fc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.82<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_b6872bf0903ad7e38d7355fc4426c160.setContent(html_2b7f11e8200f93d4aac389eb944ff3fc);
+        
+
+        marker_ec4ca95554c4320372c5f20cf000a7d9.bindPopup(popup_b6872bf0903ad7e38d7355fc4426c160)
+        ;
+
+        
+    
+    
+            var marker_743ba363160c19af9b2c377050dfc99a = L.marker(
+                [51.576737, -0.361416],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_aaeeb9e5ca1860869d6325f685e160b4 = L.popup({"maxWidth": 450});
+
+        
+            var html_66bbe13db1c811c2a797810281b347b5 = $(`<div id="html_66bbe13db1c811c2a797810281b347b5" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.9<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_aaeeb9e5ca1860869d6325f685e160b4.setContent(html_66bbe13db1c811c2a797810281b347b5);
+        
+
+        marker_743ba363160c19af9b2c377050dfc99a.bindPopup(popup_aaeeb9e5ca1860869d6325f685e160b4)
+        ;
+
+        
+    
+    
+            var marker_4a097fa3d9de71183ac6e0f61ae7c74f = L.marker(
+                [51.535577, -0.223507],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6bf7421a7e71a6f107794ea425652fbf = L.popup({"maxWidth": 450});
+
+        
+            var html_f8c40ad3ea5a15d926bb213c77a2e623 = $(`<div id="html_f8c40ad3ea5a15d926bb213c77a2e623" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_6bf7421a7e71a6f107794ea425652fbf.setContent(html_f8c40ad3ea5a15d926bb213c77a2e623);
+        
+
+        marker_4a097fa3d9de71183ac6e0f61ae7c74f.bindPopup(popup_6bf7421a7e71a6f107794ea425652fbf)
+        ;
+
+        
+    
+    
+            var marker_2cfa0638fa41d970246df94e34ac1ba1 = L.marker(
+                [51.553133, -0.47346],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_82168edc54ce89e040886426f4cda0d1 = L.popup({"maxWidth": 450});
+
+        
+            var html_c0058668199f2cc17c741f75205b24bd = $(`<div id="html_c0058668199f2cc17c741f75205b24bd" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.69<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_82168edc54ce89e040886426f4cda0d1.setContent(html_c0058668199f2cc17c741f75205b24bd);
+        
+
+        marker_2cfa0638fa41d970246df94e34ac1ba1.bindPopup(popup_82168edc54ce89e040886426f4cda0d1)
+        ;
+
+        
+    
+    
+            var marker_6ce44f81002899be410d570a2da619ff = L.marker(
+                [51.350863, -0.179048],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_34ca1da331137b3b81090bc619b6775f = L.popup({"maxWidth": 450});
+
+        
+            var html_50d2367f912f5271735132d3d10a9e4e = $(`<div id="html_50d2367f912f5271735132d3d10a9e4e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.89<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_34ca1da331137b3b81090bc619b6775f.setContent(html_50d2367f912f5271735132d3d10a9e4e);
+        
+
+        marker_6ce44f81002899be410d570a2da619ff.bindPopup(popup_34ca1da331137b3b81090bc619b6775f)
+        ;
+
+        
+    
+    
+            var marker_a0e9e095b4ffd8d69a62a3d23f538ee3 = L.marker(
+                [51.524926, -0.192583],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c00c78a4eca89b0703cbe80d69bfc5ab = L.popup({"maxWidth": 450});
+
+        
+            var html_3e51aae375ce26bffce7797300387184 = $(`<div id="html_3e51aae375ce26bffce7797300387184" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.69<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_c00c78a4eca89b0703cbe80d69bfc5ab.setContent(html_3e51aae375ce26bffce7797300387184);
+        
+
+        marker_a0e9e095b4ffd8d69a62a3d23f538ee3.bindPopup(popup_c00c78a4eca89b0703cbe80d69bfc5ab)
+        ;
+
+        
+    
+    
+            var marker_b24e3646125d34b0b28ee1bc29da7e80 = L.marker(
+                [51.512176, -0.212673],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_00b81de0df39f2e650e1708b19f8d774 = L.popup({"maxWidth": 450});
+
+        
+            var html_c617bde279b4578371fb1feffa703911 = $(`<div id="html_c617bde279b4578371fb1feffa703911" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_00b81de0df39f2e650e1708b19f8d774.setContent(html_c617bde279b4578371fb1feffa703911);
+        
+
+        marker_b24e3646125d34b0b28ee1bc29da7e80.bindPopup(popup_00b81de0df39f2e650e1708b19f8d774)
+        ;
+
+        
+    
+    
+            var marker_6cf4694f15d941dc1755224f55774c4b = L.marker(
+                [51.544144, 0.116507],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_8f00664bc336e37332b1947ae2c6f9bd = L.popup({"maxWidth": 450});
+
+        
+            var html_73a31eb554d86e5d2297531cf8a668fc = $(`<div id="html_73a31eb554d86e5d2297531cf8a668fc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_8f00664bc336e37332b1947ae2c6f9bd.setContent(html_73a31eb554d86e5d2297531cf8a668fc);
+        
+
+        marker_6cf4694f15d941dc1755224f55774c4b.bindPopup(popup_8f00664bc336e37332b1947ae2c6f9bd)
+        ;
+
+        
+    
+    
+            var marker_1f7c4a08a3205636bf28394c858cdb58 = L.marker(
+                [51.533735, -0.034668],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_4656e7648158d8e11fe75fc4ca4617cc = L.popup({"maxWidth": 450});
+
+        
+            var html_85402423b1465d7a5081d7be6ca92e68 = $(`<div id="html_85402423b1465d7a5081d7be6ca92e68" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.75<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_4656e7648158d8e11fe75fc4ca4617cc.setContent(html_85402423b1465d7a5081d7be6ca92e68);
+        
+
+        marker_1f7c4a08a3205636bf28394c858cdb58.bindPopup(popup_4656e7648158d8e11fe75fc4ca4617cc)
+        ;
+
+        
+    
+    
+            var marker_1f0dd03610480274a86e3290b12eb87d = L.marker(
+                [51.601372, -0.277646],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_3160f99bc0c8c8b25578c5f3c2239cf7 = L.popup({"maxWidth": 450});
+
+        
+            var html_16645f57cec5b592f43cabd381686aae = $(`<div id="html_16645f57cec5b592f43cabd381686aae" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_3160f99bc0c8c8b25578c5f3c2239cf7.setContent(html_16645f57cec5b592f43cabd381686aae);
+        
+
+        marker_1f0dd03610480274a86e3290b12eb87d.bindPopup(popup_3160f99bc0c8c8b25578c5f3c2239cf7)
+        ;
+
+        
+    
+    
+            var marker_50997ebc830dfe183f558ed9369f593a = L.marker(
+                [51.552128, -0.002429],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0882e311539cb6eabf9d9fa0057e0fb4 = L.popup({"maxWidth": 450});
+
+        
+            var html_8c479a774cdca63d8f675853d2be9570 = $(`<div id="html_8c479a774cdca63d8f675853d2be9570" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_0882e311539cb6eabf9d9fa0057e0fb4.setContent(html_8c479a774cdca63d8f675853d2be9570);
+        
+
+        marker_50997ebc830dfe183f558ed9369f593a.bindPopup(popup_0882e311539cb6eabf9d9fa0057e0fb4)
+        ;
+
+        
+    
+    
+            var marker_90cf0b10e010cdb0c879c3d41d4de577 = L.marker(
+                [51.565995, -0.146557],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2bb926a4341cb14d822ba8f5257c2ef3 = L.popup({"maxWidth": 450});
+
+        
+            var html_384d157f462dac9d302ecf2c94271dab = $(`<div id="html_384d157f462dac9d302ecf2c94271dab" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_2bb926a4341cb14d822ba8f5257c2ef3.setContent(html_384d157f462dac9d302ecf2c94271dab);
+        
+
+        marker_90cf0b10e010cdb0c879c3d41d4de577.bindPopup(popup_2bb926a4341cb14d822ba8f5257c2ef3)
+        ;
+
+        
+    
+    
+            var marker_9ebbbf1d97b8b25e0794cc1292af111b = L.marker(
+                [51.44081, 0.046454],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_23ed23324f1b37fd5cd791d9b983a4f0 = L.popup({"maxWidth": 450});
+
+        
+            var html_8e09d03e157f3540f4c04d0e26edb975 = $(`<div id="html_8e09d03e157f3540f4c04d0e26edb975" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.5<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_23ed23324f1b37fd5cd791d9b983a4f0.setContent(html_8e09d03e157f3540f4c04d0e26edb975);
+        
+
+        marker_9ebbbf1d97b8b25e0794cc1292af111b.bindPopup(popup_23ed23324f1b37fd5cd791d9b983a4f0)
+        ;
+
+        
+    
+    
+            var marker_9fe30e2a2f9167708cd378176455fdf1 = L.marker(
+                [51.431326, -0.139942],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_f24a30f910a403c3d50b2686999c1178 = L.popup({"maxWidth": 450});
+
+        
+            var html_621e77d23de3b27e83a89939255db15b = $(`<div id="html_621e77d23de3b27e83a89939255db15b" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_f24a30f910a403c3d50b2686999c1178.setContent(html_621e77d23de3b27e83a89939255db15b);
+        
+
+        marker_9fe30e2a2f9167708cd378176455fdf1.bindPopup(popup_f24a30f910a403c3d50b2686999c1178)
+        ;
+
+        
+    
+    
+            var marker_d8428bcc71e8d35ee046029e406d8a18 = L.marker(
+                [51.508603, -0.466562],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_277d26ea7c1df80b3f6a22423cd5dc22 = L.popup({"maxWidth": 450});
+
+        
+            var html_295d25f9914bee9e7ef4250dd55e43e1 = $(`<div id="html_295d25f9914bee9e7ef4250dd55e43e1" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.56<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_277d26ea7c1df80b3f6a22423cd5dc22.setContent(html_295d25f9914bee9e7ef4250dd55e43e1);
+        
+
+        marker_d8428bcc71e8d35ee046029e406d8a18.bindPopup(popup_277d26ea7c1df80b3f6a22423cd5dc22)
+        ;
+
+        
+    
+    
+            var marker_f987c468133232cc9c7cb29edc3d9234 = L.marker(
+                [51.623548, -0.001432],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6f1842d9f32fffcbfc9f451dfa5c25b3 = L.popup({"maxWidth": 450});
+
+        
+            var html_2907f87ecd28119776464f2687c2d986 = $(`<div id="html_2907f87ecd28119776464f2687c2d986" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.74<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_6f1842d9f32fffcbfc9f451dfa5c25b3.setContent(html_2907f87ecd28119776464f2687c2d986);
+        
+
+        marker_f987c468133232cc9c7cb29edc3d9234.bindPopup(popup_6f1842d9f32fffcbfc9f451dfa5c25b3)
+        ;
+
+        
+    
+    
+            var marker_9b1548a1ba7917f5239d8df89faccb85 = L.marker(
+                [51.583994, 0.232323],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_7841025df121617d22a0fa866e2d7999 = L.popup({"maxWidth": 450});
+
+        
+            var html_e3f7e3aa1c9f17eb28c5cf2c94a0afbe = $(`<div id="html_e3f7e3aa1c9f17eb28c5cf2c94a0afbe" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.61<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_7841025df121617d22a0fa866e2d7999.setContent(html_e3f7e3aa1c9f17eb28c5cf2c94a0afbe);
+        
+
+        marker_9b1548a1ba7917f5239d8df89faccb85.bindPopup(popup_7841025df121617d22a0fa866e2d7999)
+        ;
+
+        
+    
+    
+            var marker_0f7a53a20c07a5b64c1f1e2960bc2baa = L.marker(
+                [51.536993, -0.190216],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1b01d3c0cda7a0596217f5fa3868c834 = L.popup({"maxWidth": 450});
+
+        
+            var html_cd317fdb3494c73b51ffab7e38217eaf = $(`<div id="html_cd317fdb3494c73b51ffab7e38217eaf" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_1b01d3c0cda7a0596217f5fa3868c834.setContent(html_cd317fdb3494c73b51ffab7e38217eaf);
+        
+
+        marker_0f7a53a20c07a5b64c1f1e2960bc2baa.bindPopup(popup_1b01d3c0cda7a0596217f5fa3868c834)
+        ;
+
+        
+    
+    
+            var marker_943240a1dbc61afc6d0083cc22a89226 = L.marker(
+                [51.440508, -0.22104],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_3fd69733e608c59a9d522b59bf36c498 = L.popup({"maxWidth": 450});
+
+        
+            var html_96697d449a49779bb33c6ace3fdbc123 = $(`<div id="html_96697d449a49779bb33c6ace3fdbc123" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_3fd69733e608c59a9d522b59bf36c498.setContent(html_96697d449a49779bb33c6ace3fdbc123);
+        
+
+        marker_943240a1dbc61afc6d0083cc22a89226.bindPopup(popup_3fd69733e608c59a9d522b59bf36c498)
+        ;
+
+        
+    
+    
+            var marker_2a313d69054a3fdb24743fcc725b748c = L.marker(
+                [51.400713, -0.120655],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e2ff2dad76787cfe85bc266d220bde89 = L.popup({"maxWidth": 450});
+
+        
+            var html_de136925b51c80f05aef2e7f5ac88f8a = $(`<div id="html_de136925b51c80f05aef2e7f5ac88f8a" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.86<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_e2ff2dad76787cfe85bc266d220bde89.setContent(html_de136925b51c80f05aef2e7f5ac88f8a);
+        
+
+        marker_2a313d69054a3fdb24743fcc725b748c.bindPopup(popup_e2ff2dad76787cfe85bc266d220bde89)
+        ;
+
+        
+    
+    
+            var marker_663de8361308b2ad98ab03d856e60727 = L.marker(
+                [51.591795, 0.183358],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_867edbd0c1bfeac84ea1c56a796b2026 = L.popup({"maxWidth": 450});
+
+        
+            var html_2c28b578c377e419de34cf274f44f7a1 = $(`<div id="html_2c28b578c377e419de34cf274f44f7a1" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.61<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_867edbd0c1bfeac84ea1c56a796b2026.setContent(html_2c28b578c377e419de34cf274f44f7a1);
+        
+
+        marker_663de8361308b2ad98ab03d856e60727.bindPopup(popup_867edbd0c1bfeac84ea1c56a796b2026)
+        ;
+
+        
+    
+    
+            var marker_a702c01fe01aeed80c96486d35ef2625 = L.marker(
+                [51.57941, 0.188754],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e1a9cf2329e0728d23fe2fbbe8472fff = L.popup({"maxWidth": 450});
+
+        
+            var html_8486e7b2ffae6cc6b4db0766903a6c88 = $(`<div id="html_8486e7b2ffae6cc6b4db0766903a6c88" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.35<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:medium<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_e1a9cf2329e0728d23fe2fbbe8472fff.setContent(html_8486e7b2ffae6cc6b4db0766903a6c88);
+        
+
+        marker_a702c01fe01aeed80c96486d35ef2625.bindPopup(popup_e1a9cf2329e0728d23fe2fbbe8472fff)
+        ;
+
+        
+    
+    
+            var marker_6f353eb41b59d1b60b57006891e2d10b = L.marker(
+                [51.508961, -0.032074],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_829a9605b0cb57e14933cac7763217ad = L.popup({"maxWidth": 450});
+
+        
+            var html_1b48ba4f06bf8a8ef8d6912c564b5532 = $(`<div id="html_1b48ba4f06bf8a8ef8d6912c564b5532" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_829a9605b0cb57e14933cac7763217ad.setContent(html_1b48ba4f06bf8a8ef8d6912c564b5532);
+        
+
+        marker_6f353eb41b59d1b60b57006891e2d10b.bindPopup(popup_829a9605b0cb57e14933cac7763217ad)
+        ;
+
+        
+    
+    
+            var marker_ab68c6e54777b91ad80f873c7820bf92 = L.marker(
+                [51.539129, -0.254055],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_3334ac89f4388604baf7374e23295f91 = L.popup({"maxWidth": 450});
+
+        
+            var html_aca1344ad4c68c17d412a87706e43087 = $(`<div id="html_aca1344ad4c68c17d412a87706e43087" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_3334ac89f4388604baf7374e23295f91.setContent(html_aca1344ad4c68c17d412a87706e43087);
+        
+
+        marker_ab68c6e54777b91ad80f873c7820bf92.bindPopup(popup_3334ac89f4388604baf7374e23295f91)
+        ;
+
+        
+    
+    
+            var marker_0f23d47ceae925e8795d75c45ca1ff57 = L.marker(
+                [51.459879, -0.382532],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_39582ab03d7ad92c2c02a98117ec312a = L.popup({"maxWidth": 450});
+
+        
+            var html_3e72993ea795fa54a03b4621a7eca273 = $(`<div id="html_3e72993ea795fa54a03b4621a7eca273" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_39582ab03d7ad92c2c02a98117ec312a.setContent(html_3e72993ea795fa54a03b4621a7eca273);
+        
+
+        marker_0f23d47ceae925e8795d75c45ca1ff57.bindPopup(popup_39582ab03d7ad92c2c02a98117ec312a)
+        ;
+
+        
+    
+    
+            var marker_c7a82f0606739afcedd8f9d390228464 = L.marker(
+                [51.564305, -0.124479],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_80b18e379d1e0018587c27d9a67e0e8b = L.popup({"maxWidth": 450});
+
+        
+            var html_a1b731697b9dc17184fd3861ee4040d3 = $(`<div id="html_a1b731697b9dc17184fd3861ee4040d3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_80b18e379d1e0018587c27d9a67e0e8b.setContent(html_a1b731697b9dc17184fd3861ee4040d3);
+        
+
+        marker_c7a82f0606739afcedd8f9d390228464.bindPopup(popup_80b18e379d1e0018587c27d9a67e0e8b)
+        ;
+
+        
+    
+    
+            var marker_3ffceb38916de30ec8b928d43c87999e = L.marker(
+                [51.544006, -0.140125],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_cbef1e5c3b2172dc0018df2a1d551464 = L.popup({"maxWidth": 450});
+
+        
+            var html_6bb6a4642aa4ee6c3377c2e05fcf6870 = $(`<div id="html_6bb6a4642aa4ee6c3377c2e05fcf6870" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_cbef1e5c3b2172dc0018df2a1d551464.setContent(html_6bb6a4642aa4ee6c3377c2e05fcf6870);
+        
+
+        marker_3ffceb38916de30ec8b928d43c87999e.bindPopup(popup_cbef1e5c3b2172dc0018df2a1d551464)
+        ;
+
+        
+    
+    
+            var marker_fb896249aa16a8fb7a9ad0c56944b193 = L.marker(
+                [51.511867, -0.035335],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_8dc77f395efb5f51c30af16d18c334b9 = L.popup({"maxWidth": 450});
+
+        
+            var html_407e7f9b8975fb3a20717811a94ad77a = $(`<div id="html_407e7f9b8975fb3a20717811a94ad77a" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_8dc77f395efb5f51c30af16d18c334b9.setContent(html_407e7f9b8975fb3a20717811a94ad77a);
+        
+
+        marker_fb896249aa16a8fb7a9ad0c56944b193.bindPopup(popup_8dc77f395efb5f51c30af16d18c334b9)
+        ;
+
+        
+    
+    
+            var marker_70b45ec4c266d12eefbb90733b6c22ad = L.marker(
+                [51.584329, -0.062899],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2ff1e2041c3cfe17f6d4e3e37c094f28 = L.popup({"maxWidth": 450});
+
+        
+            var html_ac1cc163792cce5c333171aa8490e749 = $(`<div id="html_ac1cc163792cce5c333171aa8490e749" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.52<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_2ff1e2041c3cfe17f6d4e3e37c094f28.setContent(html_ac1cc163792cce5c333171aa8490e749);
+        
+
+        marker_70b45ec4c266d12eefbb90733b6c22ad.bindPopup(popup_2ff1e2041c3cfe17f6d4e3e37c094f28)
+        ;
+
+        
+    
+    
+            var marker_c7fdcd65e5c422398c16eebe470ac884 = L.marker(
+                [51.634929, -0.07544],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a88a0fc7709047f2703967df0af7eb89 = L.popup({"maxWidth": 450});
+
+        
+            var html_44774e280029660e71475c2952071c30 = $(`<div id="html_44774e280029660e71475c2952071c30" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.92<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_a88a0fc7709047f2703967df0af7eb89.setContent(html_44774e280029660e71475c2952071c30);
+        
+
+        marker_c7fdcd65e5c422398c16eebe470ac884.bindPopup(popup_a88a0fc7709047f2703967df0af7eb89)
+        ;
+
+        
+    
+    
+            var marker_262e7125472a5671e0d5ddc233d909de = L.marker(
+                [51.609061, -0.182296],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_01a7bfcf4bc6552aff67f9d9c15ecf86 = L.popup({"maxWidth": 450});
+
+        
+            var html_095070354bc4fdc05e548ace573c39c4 = $(`<div id="html_095070354bc4fdc05e548ace573c39c4" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.9<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_01a7bfcf4bc6552aff67f9d9c15ecf86.setContent(html_095070354bc4fdc05e548ace573c39c4);
+        
+
+        marker_262e7125472a5671e0d5ddc233d909de.bindPopup(popup_01a7bfcf4bc6552aff67f9d9c15ecf86)
+        ;
+
+        
+    
+    
+            var marker_a8cbb045e20625822246641ec99e45d5 = L.marker(
+                [51.36283, -0.292326],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_05d6faea72d72d96d569b8be46742ee0 = L.popup({"maxWidth": 450});
+
+        
+            var html_b8f4523be79a354787d66bc2b4b159fe = $(`<div id="html_b8f4523be79a354787d66bc2b4b159fe" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.67<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_05d6faea72d72d96d569b8be46742ee0.setContent(html_b8f4523be79a354787d66bc2b4b159fe);
+        
+
+        marker_a8cbb045e20625822246641ec99e45d5.bindPopup(popup_05d6faea72d72d96d569b8be46742ee0)
+        ;
+
+        
+    
+    
+            var marker_0a35426bcec22e5cadae4234eb60fdb9 = L.marker(
+                [51.535374, 0.048732],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_88aa6114d1fe6cd3cf99b4d3214e56e1 = L.popup({"maxWidth": 450});
+
+        
+            var html_e5f8de7c16756e04c19209aacf91d9ab = $(`<div id="html_e5f8de7c16756e04c19209aacf91d9ab" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_88aa6114d1fe6cd3cf99b4d3214e56e1.setContent(html_e5f8de7c16756e04c19209aacf91d9ab);
+        
+
+        marker_0a35426bcec22e5cadae4234eb60fdb9.bindPopup(popup_88aa6114d1fe6cd3cf99b4d3214e56e1)
+        ;
+
+        
+    
+    
+            var marker_5115fab663432cd27c9b00696d06f339 = L.marker(
+                [51.569495, -0.315473],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_4f5c22cc0310b1263d06d3b138083f98 = L.popup({"maxWidth": 450});
+
+        
+            var html_bf2b66a1e37c4d1bfed2ec7db7c42f30 = $(`<div id="html_bf2b66a1e37c4d1bfed2ec7db7c42f30" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.64<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_4f5c22cc0310b1263d06d3b138083f98.setContent(html_bf2b66a1e37c4d1bfed2ec7db7c42f30);
+        
+
+        marker_5115fab663432cd27c9b00696d06f339.bindPopup(popup_4f5c22cc0310b1263d06d3b138083f98)
+        ;
+
+        
+    
+    
+            var marker_1b466434f13e4cf825c9897a367ac93b = L.marker(
+                [51.481817, -0.011538],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_222c1186a1d94a73c801694e3c869a32 = L.popup({"maxWidth": 450});
+
+        
+            var html_f8cf67eae6f6776229dc448588327d7b = $(`<div id="html_f8cf67eae6f6776229dc448588327d7b" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.57<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_222c1186a1d94a73c801694e3c869a32.setContent(html_f8cf67eae6f6776229dc448588327d7b);
+        
+
+        marker_1b466434f13e4cf825c9897a367ac93b.bindPopup(popup_222c1186a1d94a73c801694e3c869a32)
+        ;
+
+        
+    
+    
+            var marker_8de39ebd4fbb42c6f8a0364fbd14c2a9 = L.marker(
+                [51.425676, -0.078448],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_69e0481912bed9e9a71a5571611b9be6 = L.popup({"maxWidth": 450});
+
+        
+            var html_f6f6be6d29bb94e1a5c48aa00ed1a4db = $(`<div id="html_f6f6be6d29bb94e1a5c48aa00ed1a4db" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_69e0481912bed9e9a71a5571611b9be6.setContent(html_f6f6be6d29bb94e1a5c48aa00ed1a4db);
+        
+
+        marker_8de39ebd4fbb42c6f8a0364fbd14c2a9.bindPopup(popup_69e0481912bed9e9a71a5571611b9be6)
+        ;
+
+        
+    
+    
+            var marker_2410a4fcca6cc919cce347e1bbbae076 = L.marker(
+                [51.496327, -0.263269],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_7cea0813d2a6596f30dd461b19e6eb00 = L.popup({"maxWidth": 450});
+
+        
+            var html_0805237a352021424547029a2cbe6640 = $(`<div id="html_0805237a352021424547029a2cbe6640" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_7cea0813d2a6596f30dd461b19e6eb00.setContent(html_0805237a352021424547029a2cbe6640);
+        
+
+        marker_2410a4fcca6cc919cce347e1bbbae076.bindPopup(popup_7cea0813d2a6596f30dd461b19e6eb00)
+        ;
+
+        
+    
+    
+            var marker_127102ba5878fea2f0034329e5b84f08 = L.marker(
+                [51.550438, 0.194359],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_84b99e5d2cf476334827f985fb4553d6 = L.popup({"maxWidth": 450});
+
+        
+            var html_2ea89a008c9f97687307b97931c380f6 = $(`<div id="html_2ea89a008c9f97687307b97931c380f6" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.72<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_84b99e5d2cf476334827f985fb4553d6.setContent(html_2ea89a008c9f97687307b97931c380f6);
+        
+
+        marker_127102ba5878fea2f0034329e5b84f08.bindPopup(popup_84b99e5d2cf476334827f985fb4553d6)
+        ;
+
+        
+    
+    
+            var marker_cc13e23b25470363c222b2d5f099d9e0 = L.marker(
+                [51.523067, -0.032893],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ec4fa5dd27d7ef8a974c792a7f9ab610 = L.popup({"maxWidth": 450});
+
+        
+            var html_041ff77dd2c9187766a3cafbd7607545 = $(`<div id="html_041ff77dd2c9187766a3cafbd7607545" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.44<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_ec4fa5dd27d7ef8a974c792a7f9ab610.setContent(html_041ff77dd2c9187766a3cafbd7607545);
+        
+
+        marker_cc13e23b25470363c222b2d5f099d9e0.bindPopup(popup_ec4fa5dd27d7ef8a974c792a7f9ab610)
+        ;
+
+        
+    
+    
+            var marker_6938da842ae2021f90e6261e105fb489 = L.marker(
+                [51.391883, -0.088417],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a05de828872e8201e78d0ccf1a7b5cdc = L.popup({"maxWidth": 450});
+
+        
+            var html_f445e98ee5c873b7d161fec88ff65394 = $(`<div id="html_f445e98ee5c873b7d161fec88ff65394" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_a05de828872e8201e78d0ccf1a7b5cdc.setContent(html_f445e98ee5c873b7d161fec88ff65394);
+        
+
+        marker_6938da842ae2021f90e6261e105fb489.bindPopup(popup_a05de828872e8201e78d0ccf1a7b5cdc)
+        ;
+
+        
+    
+    
+            var marker_89a3ea565de01d5eaa3d8dd4f04d3b9b = L.marker(
+                [51.458973, 0.08134],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_5d60faa21d32ab99d7c0647a97513ea5 = L.popup({"maxWidth": 450});
+
+        
+            var html_1f3fd67315d3ccc65e5286ef8dde667d = $(`<div id="html_1f3fd67315d3ccc65e5286ef8dde667d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.69<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_5d60faa21d32ab99d7c0647a97513ea5.setContent(html_1f3fd67315d3ccc65e5286ef8dde667d);
+        
+
+        marker_89a3ea565de01d5eaa3d8dd4f04d3b9b.bindPopup(popup_5d60faa21d32ab99d7c0647a97513ea5)
+        ;
+
+        
+    
+    
+            var marker_2108d792151744db8b4a7e079bd8997a = L.marker(
+                [51.546331, -0.092291],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_702fcac7117e970014c46cfe1288d343 = L.popup({"maxWidth": 450});
+
+        
+            var html_64fd5dbe47b3291cf9d51ed7e31edfcf = $(`<div id="html_64fd5dbe47b3291cf9d51ed7e31edfcf" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.69<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_702fcac7117e970014c46cfe1288d343.setContent(html_64fd5dbe47b3291cf9d51ed7e31edfcf);
+        
+
+        marker_2108d792151744db8b4a7e079bd8997a.bindPopup(popup_702fcac7117e970014c46cfe1288d343)
+        ;
+
+        
+    
+    
+            var marker_08d99a8b3a337fa915db2c98588fe6c4 = L.marker(
+                [51.492829, 0.06463],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b0d81fa915abc4f27a625e2b65bd0337 = L.popup({"maxWidth": 450});
+
+        
+            var html_0bec6bef501575179482f4fc93fbbd6b = $(`<div id="html_0bec6bef501575179482f4fc93fbbd6b" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.52<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_b0d81fa915abc4f27a625e2b65bd0337.setContent(html_0bec6bef501575179482f4fc93fbbd6b);
+        
+
+        marker_08d99a8b3a337fa915db2c98588fe6c4.bindPopup(popup_b0d81fa915abc4f27a625e2b65bd0337)
+        ;
+
+        
+    
+    
+            var marker_74023ae9c4cfb7c3c606620bbe1372fc = L.marker(
+                [51.543062, -0.170448],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_8ad5890c713822f9303eddd79fb95577 = L.popup({"maxWidth": 450});
+
+        
+            var html_e6da3ff19f18e40c782cadb0ec3e8230 = $(`<div id="html_e6da3ff19f18e40c782cadb0ec3e8230" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_8ad5890c713822f9303eddd79fb95577.setContent(html_e6da3ff19f18e40c782cadb0ec3e8230);
+        
+
+        marker_74023ae9c4cfb7c3c606620bbe1372fc.bindPopup(popup_8ad5890c713822f9303eddd79fb95577)
+        ;
+
+        
+    
+    
+            var marker_212dcf45f79ffa8606bca0213c27c20f = L.marker(
+                [51.518959, 0.023016000000000002],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0e6b4e8e06f11d97d9ab4be0d2696d5d = L.popup({"maxWidth": 450});
+
+        
+            var html_38b1e5b1cc07d84a462b4e09643578a8 = $(`<div id="html_38b1e5b1cc07d84a462b4e09643578a8" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.73<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_0e6b4e8e06f11d97d9ab4be0d2696d5d.setContent(html_38b1e5b1cc07d84a462b4e09643578a8);
+        
+
+        marker_212dcf45f79ffa8606bca0213c27c20f.bindPopup(popup_0e6b4e8e06f11d97d9ab4be0d2696d5d)
+        ;
+
+        
+    
+    
+            var marker_9b9ea7a24a586c104c06bc5d7fef19cd = L.marker(
+                [51.478854, -0.198235],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1756c798d7d0ad81f8e49f93bfcf9bc7 = L.popup({"maxWidth": 450});
+
+        
+            var html_1091f345a8cb517bfe920e464bf02bb0 = $(`<div id="html_1091f345a8cb517bfe920e464bf02bb0" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.57<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_1756c798d7d0ad81f8e49f93bfcf9bc7.setContent(html_1091f345a8cb517bfe920e464bf02bb0);
+        
+
+        marker_9b9ea7a24a586c104c06bc5d7fef19cd.bindPopup(popup_1756c798d7d0ad81f8e49f93bfcf9bc7)
+        ;
+
+        
+    
+    
+            var marker_b3669d8edc3726be14b14d18dc194cc1 = L.marker(
+                [51.412944, 0.013083],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_af039df489a9b27ade97f973732f5e93 = L.popup({"maxWidth": 450});
+
+        
+            var html_ecb2a6ca564f7485d6732d9bbcd0c1ec = $(`<div id="html_ecb2a6ca564f7485d6732d9bbcd0c1ec" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.86<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_af039df489a9b27ade97f973732f5e93.setContent(html_ecb2a6ca564f7485d6732d9bbcd0c1ec);
+        
+
+        marker_b3669d8edc3726be14b14d18dc194cc1.bindPopup(popup_af039df489a9b27ade97f973732f5e93)
+        ;
+
+        
+    
+    
+            var marker_3d9b97559ccca224b66bdbdebf4186f3 = L.marker(
+                [51.38959, -0.294104],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_5356c346fa2041c3728c51098c973b0c = L.popup({"maxWidth": 450});
+
+        
+            var html_8bac5b70a29de47ccd87d9156b6e9acc = $(`<div id="html_8bac5b70a29de47ccd87d9156b6e9acc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_5356c346fa2041c3728c51098c973b0c.setContent(html_8bac5b70a29de47ccd87d9156b6e9acc);
+        
+
+        marker_3d9b97559ccca224b66bdbdebf4186f3.bindPopup(popup_5356c346fa2041c3728c51098c973b0c)
+        ;
+
+        
+    
+    
+            var marker_ef7d9a10985ba82d9e0b55149bf03e0d = L.marker(
+                [51.456055, -0.021237],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_628697647e7148551a1f166677f3f40a = L.popup({"maxWidth": 450});
+
+        
+            var html_af3eb8193b418d39cfac140d163dab10 = $(`<div id="html_af3eb8193b418d39cfac140d163dab10" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_628697647e7148551a1f166677f3f40a.setContent(html_af3eb8193b418d39cfac140d163dab10);
+        
+
+        marker_ef7d9a10985ba82d9e0b55149bf03e0d.bindPopup(popup_628697647e7148551a1f166677f3f40a)
+        ;
+
+        
+    
+    
+            var marker_4f722d222aa4511115cb17a0519ff98d = L.marker(
+                [51.483839, -0.349985],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c781277027174b902fe4aeca980ea770 = L.popup({"maxWidth": 450});
+
+        
+            var html_cc1674f4ab16046625125558228cefec = $(`<div id="html_cc1674f4ab16046625125558228cefec" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.56<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_c781277027174b902fe4aeca980ea770.setContent(html_cc1674f4ab16046625125558228cefec);
+        
+
+        marker_4f722d222aa4511115cb17a0519ff98d.bindPopup(popup_c781277027174b902fe4aeca980ea770)
+        ;
+
+        
+    
+    
+            var marker_9304ed895b14380983d760b629dbb472 = L.marker(
+                [51.52231, 0.054229],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ce5c6900ef257572e74721f45d384753 = L.popup({"maxWidth": 450});
+
+        
+            var html_e8a419bf161112280264fb8929872d13 = $(`<div id="html_e8a419bf161112280264fb8929872d13" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.55<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_ce5c6900ef257572e74721f45d384753.setContent(html_e8a419bf161112280264fb8929872d13);
+        
+
+        marker_9304ed895b14380983d760b629dbb472.bindPopup(popup_ce5c6900ef257572e74721f45d384753)
+        ;
+
+        
+    
+    
+            var marker_ed3e87e527ef3e6bcd7f3f2523a52d54 = L.marker(
+                [51.489563, -0.04812],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0f12aa4007eadcc2221e48c425f0e203 = L.popup({"maxWidth": 450});
+
+        
+            var html_94d79c05cd1b33da8aa1a2d6eff0c4e1 = $(`<div id="html_94d79c05cd1b33da8aa1a2d6eff0c4e1" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_0f12aa4007eadcc2221e48c425f0e203.setContent(html_94d79c05cd1b33da8aa1a2d6eff0c4e1);
+        
+
+        marker_ed3e87e527ef3e6bcd7f3f2523a52d54.bindPopup(popup_0f12aa4007eadcc2221e48c425f0e203)
+        ;
+
+        
+    
+    
+            var marker_981d731d1f88c6027f62943c14b32259 = L.marker(
+                [51.528641, -0.330417],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_bb6c302e7410af60a4550e06f73a12b0 = L.popup({"maxWidth": 450});
+
+        
+            var html_ab1a33172c2b01887d73fc4bbe0b5955 = $(`<div id="html_ab1a33172c2b01887d73fc4bbe0b5955" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.65<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_bb6c302e7410af60a4550e06f73a12b0.setContent(html_ab1a33172c2b01887d73fc4bbe0b5955);
+        
+
+        marker_981d731d1f88c6027f62943c14b32259.bindPopup(popup_bb6c302e7410af60a4550e06f73a12b0)
+        ;
+
+        
+    
+    
+            var marker_6ea05df2ca216cf161f72b28cfa2569c = L.marker(
+                [51.420289, -0.078444],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_77a539f303c4fbc9e5b680dd1159c16e = L.popup({"maxWidth": 450});
+
+        
+            var html_3bd9dbe7919f8ac8c719f2935403a555 = $(`<div id="html_3bd9dbe7919f8ac8c719f2935403a555" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.9<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_77a539f303c4fbc9e5b680dd1159c16e.setContent(html_3bd9dbe7919f8ac8c719f2935403a555);
+        
+
+        marker_6ea05df2ca216cf161f72b28cfa2569c.bindPopup(popup_77a539f303c4fbc9e5b680dd1159c16e)
+        ;
+
+        
+    
+    
+            var marker_069b1eb197b4301add1559b6f71e745f = L.marker(
+                [51.403312, -0.296527],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ddc1aa6812c2c7ce7a3ea9159536ece7 = L.popup({"maxWidth": 450});
+
+        
+            var html_42d5aba4f7e64fba2374e87efde07cdb = $(`<div id="html_42d5aba4f7e64fba2374e87efde07cdb" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.82<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_ddc1aa6812c2c7ce7a3ea9159536ece7.setContent(html_42d5aba4f7e64fba2374e87efde07cdb);
+        
+
+        marker_069b1eb197b4301add1559b6f71e745f.bindPopup(popup_ddc1aa6812c2c7ce7a3ea9159536ece7)
+        ;
+
+        
+    
+    
+            var marker_ae9736d8b03a037dabb12d07898312bb = L.marker(
+                [51.560677, -0.306998],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2984c3205e22585031a144f50d8c9ca4 = L.popup({"maxWidth": 450});
+
+        
+            var html_8a63c2d44afc92ee0e8b7ae403c4ee34 = $(`<div id="html_8a63c2d44afc92ee0e8b7ae403c4ee34" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.69<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_2984c3205e22585031a144f50d8c9ca4.setContent(html_8a63c2d44afc92ee0e8b7ae403c4ee34);
+        
+
+        marker_ae9736d8b03a037dabb12d07898312bb.bindPopup(popup_2984c3205e22585031a144f50d8c9ca4)
+        ;
+
+        
+    
+    
+            var marker_b1941e0bd085ccb85bf3dae9c7e3ad52 = L.marker(
+                [51.3959, -0.176297],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a11e793ef82ae3a8b135a6ed11fde304 = L.popup({"maxWidth": 450});
+
+        
+            var html_8c168fef44e9ec9f41d5214f9eda0e91 = $(`<div id="html_8c168fef44e9ec9f41d5214f9eda0e91" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_a11e793ef82ae3a8b135a6ed11fde304.setContent(html_8c168fef44e9ec9f41d5214f9eda0e91);
+        
+
+        marker_b1941e0bd085ccb85bf3dae9c7e3ad52.bindPopup(popup_a11e793ef82ae3a8b135a6ed11fde304)
+        ;
+
+        
+    
+    
+            var marker_40ba080767308204c5c3bbeaf3eed924 = L.marker(
+                [51.463701, -0.228244],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_534a375a67fd48b0e87f6bf89c362151 = L.popup({"maxWidth": 450});
+
+        
+            var html_7aebf9472759987139d81a4e95620df3 = $(`<div id="html_7aebf9472759987139d81a4e95620df3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.93<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_534a375a67fd48b0e87f6bf89c362151.setContent(html_7aebf9472759987139d81a4e95620df3);
+        
+
+        marker_40ba080767308204c5c3bbeaf3eed924.bindPopup(popup_534a375a67fd48b0e87f6bf89c362151)
+        ;
+
+        
+    
+    
+            var marker_6dd18683c31a6e674519b5d5d4154ce9 = L.marker(
+                [51.57351, -0.14921],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_aed0fc0be3d4205d5a9587b1b1c1f010 = L.popup({"maxWidth": 450});
+
+        
+            var html_990ab72f9862b1d65a8fed33e6e00385 = $(`<div id="html_990ab72f9862b1d65a8fed33e6e00385" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.9<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_aed0fc0be3d4205d5a9587b1b1c1f010.setContent(html_990ab72f9862b1d65a8fed33e6e00385);
+        
+
+        marker_6dd18683c31a6e674519b5d5d4154ce9.bindPopup(popup_aed0fc0be3d4205d5a9587b1b1c1f010)
+        ;
+
+        
+    
+    
+            var marker_1a6d55ec76ef3b966bfbc98cf6fe012f = L.marker(
+                [51.539264, -0.447925],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_cfe7c2e14386cdc12f88ef2446e2ba3f = L.popup({"maxWidth": 450});
+
+        
+            var html_a381cca232d71f82be1430e0b4e7ceba = $(`<div id="html_a381cca232d71f82be1430e0b4e7ceba" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.63<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_cfe7c2e14386cdc12f88ef2446e2ba3f.setContent(html_a381cca232d71f82be1430e0b4e7ceba);
+        
+
+        marker_1a6d55ec76ef3b966bfbc98cf6fe012f.bindPopup(popup_cfe7c2e14386cdc12f88ef2446e2ba3f)
+        ;
+
+        
+    
+    
+            var marker_ad6b0d56ca0c6e3304144d13d7e94562 = L.marker(
+                [51.566931, 0.080308],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_5a528ddef190c16c6f79cf7a0582d594 = L.popup({"maxWidth": 450});
+
+        
+            var html_56020a3cab61fe09b0cf0d3e3824f41f = $(`<div id="html_56020a3cab61fe09b0cf0d3e3824f41f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.73<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_5a528ddef190c16c6f79cf7a0582d594.setContent(html_56020a3cab61fe09b0cf0d3e3824f41f);
+        
+
+        marker_ad6b0d56ca0c6e3304144d13d7e94562.bindPopup(popup_5a528ddef190c16c6f79cf7a0582d594)
+        ;
+
+        
+    
+    
+            var marker_45912536596bba2396de247dac4acfd5 = L.marker(
+                [51.481546, -0.126133],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_5875393ada7e7090584106b894d7dd75 = L.popup({"maxWidth": 450});
+
+        
+            var html_ce39f712bb8e2eed3bd1ef1ae1146934 = $(`<div id="html_ce39f712bb8e2eed3bd1ef1ae1146934" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.57<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_5875393ada7e7090584106b894d7dd75.setContent(html_ce39f712bb8e2eed3bd1ef1ae1146934);
+        
+
+        marker_45912536596bba2396de247dac4acfd5.bindPopup(popup_5875393ada7e7090584106b894d7dd75)
+        ;
+
+        
+    
+    
+            var marker_8f34c222a9b86499e7a92f3d66907761 = L.marker(
+                [51.352555, -0.095468],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_d897dae3748d50212f7a8b004892f622 = L.popup({"maxWidth": 450});
+
+        
+            var html_566de1df52028da1f49631be8158ce62 = $(`<div id="html_566de1df52028da1f49631be8158ce62" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.82<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_d897dae3748d50212f7a8b004892f622.setContent(html_566de1df52028da1f49631be8158ce62);
+        
+
+        marker_8f34c222a9b86499e7a92f3d66907761.bindPopup(popup_d897dae3748d50212f7a8b004892f622)
+        ;
+
+        
+    
+    
+            var marker_bc77172ef8632ad268f11a6132229acf = L.marker(
+                [51.329308, -0.058149],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0d8bef013cd06be2a804412ed612a3ad = L.popup({"maxWidth": 450});
+
+        
+            var html_acecd30fc930bebaeee39644eae71cbc = $(`<div id="html_acecd30fc930bebaeee39644eae71cbc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.77<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_0d8bef013cd06be2a804412ed612a3ad.setContent(html_acecd30fc930bebaeee39644eae71cbc);
+        
+
+        marker_bc77172ef8632ad268f11a6132229acf.bindPopup(popup_0d8bef013cd06be2a804412ed612a3ad)
+        ;
+
+        
+    
+    
+            var marker_21eb494f6c6b10908c50c28ae25f3ac1 = L.marker(
+                [51.613724, -0.083097],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_5880cd996b94865cdd5c5eca9ae494c8 = L.popup({"maxWidth": 450});
+
+        
+            var html_6256b4cbcb79ef53722d85d43bc44628 = $(`<div id="html_6256b4cbcb79ef53722d85d43bc44628" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.32<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_5880cd996b94865cdd5c5eca9ae494c8.setContent(html_6256b4cbcb79ef53722d85d43bc44628);
+        
+
+        marker_21eb494f6c6b10908c50c28ae25f3ac1.bindPopup(popup_5880cd996b94865cdd5c5eca9ae494c8)
+        ;
+
+        
+    
+    
+            var marker_428e880c7774b61808412ce4d70d4d5b = L.marker(
+                [51.366081, -0.19429],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1d4b99690eed233eb6d558a423635a9f = L.popup({"maxWidth": 450});
+
+        
+            var html_5bb8c1439ec752abcecc9d962cf58447 = $(`<div id="html_5bb8c1439ec752abcecc9d962cf58447" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.48<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:medium<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_1d4b99690eed233eb6d558a423635a9f.setContent(html_5bb8c1439ec752abcecc9d962cf58447);
+        
+
+        marker_428e880c7774b61808412ce4d70d4d5b.bindPopup(popup_1d4b99690eed233eb6d558a423635a9f)
+        ;
+
+        
+    
+    
+            var marker_d2d4d990e40f4b9576b82a2253067785 = L.marker(
+                [51.548924, 0.119238],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_add38a49861e937e545eecb516fbb43c = L.popup({"maxWidth": 450});
+
+        
+            var html_3ff87dc416d447f45cb2fa08ba7f26df = $(`<div id="html_3ff87dc416d447f45cb2fa08ba7f26df" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_add38a49861e937e545eecb516fbb43c.setContent(html_3ff87dc416d447f45cb2fa08ba7f26df);
+        
+
+        marker_d2d4d990e40f4b9576b82a2253067785.bindPopup(popup_add38a49861e937e545eecb516fbb43c)
+        ;
+
+        
+    
+    
+            var marker_e54943361c98745a1d19ffff158adfcb = L.marker(
+                [51.406847, -0.148341],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_01c64eba0a90ab676733cfa7ee5520cf = L.popup({"maxWidth": 450});
+
+        
+            var html_e4504636191f8d23955e5904ac6f4914 = $(`<div id="html_e4504636191f8d23955e5904ac6f4914" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.53<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_01c64eba0a90ab676733cfa7ee5520cf.setContent(html_e4504636191f8d23955e5904ac6f4914);
+        
+
+        marker_e54943361c98745a1d19ffff158adfcb.bindPopup(popup_01c64eba0a90ab676733cfa7ee5520cf)
+        ;
+
+        
+    
+    
+            var marker_a12efb92b8adb3cab09828bd9b411a47 = L.marker(
+                [51.459041, -0.337449],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_030c1004ce0f43fecfd9e2e8078854be = L.popup({"maxWidth": 450});
+
+        
+            var html_57a39b9d9977d17ab8c1d455f2f8ce63 = $(`<div id="html_57a39b9d9977d17ab8c1d455f2f8ce63" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_030c1004ce0f43fecfd9e2e8078854be.setContent(html_57a39b9d9977d17ab8c1d455f2f8ce63);
+        
+
+        marker_a12efb92b8adb3cab09828bd9b411a47.bindPopup(popup_030c1004ce0f43fecfd9e2e8078854be)
+        ;
+
+        
+    
+    
+            var marker_ecf82f2964ff78daa61aa4fcb89009a6 = L.marker(
+                [51.541025, -0.143231],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b3c92c31476c6c3a939c1579b26cb22f = L.popup({"maxWidth": 450});
+
+        
+            var html_ef8d2233bcbec114b7f15586110bdcaf = $(`<div id="html_ef8d2233bcbec114b7f15586110bdcaf" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.33<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:medium<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_b3c92c31476c6c3a939c1579b26cb22f.setContent(html_ef8d2233bcbec114b7f15586110bdcaf);
+        
+
+        marker_ecf82f2964ff78daa61aa4fcb89009a6.bindPopup(popup_b3c92c31476c6c3a939c1579b26cb22f)
+        ;
+
+        
+    
+    
+            var marker_b029772d26729c9eb7619c5f88146a69 = L.marker(
+                [51.589744, -0.372107],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_76a2534d10a00849dde19119149fbf68 = L.popup({"maxWidth": 450});
+
+        
+            var html_1628fb79633586b2cbcd753a86affaad = $(`<div id="html_1628fb79633586b2cbcd753a86affaad" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.67<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_76a2534d10a00849dde19119149fbf68.setContent(html_1628fb79633586b2cbcd753a86affaad);
+        
+
+        marker_b029772d26729c9eb7619c5f88146a69.bindPopup(popup_76a2534d10a00849dde19119149fbf68)
+        ;
+
+        
+    
+    
+            var marker_ba0a7568fefc187db2edce9194026e22 = L.marker(
+                [51.472782, -0.203384],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ea5a23b35c5bf0231616df2891881dbe = L.popup({"maxWidth": 450});
+
+        
+            var html_1d7beb28cc7d27bf1d880cfc588bba4c = $(`<div id="html_1d7beb28cc7d27bf1d880cfc588bba4c" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_ea5a23b35c5bf0231616df2891881dbe.setContent(html_1d7beb28cc7d27bf1d880cfc588bba4c);
+        
+
+        marker_ba0a7568fefc187db2edce9194026e22.bindPopup(popup_ea5a23b35c5bf0231616df2891881dbe)
+        ;
+
+        
+    
+    
+            var marker_41f6b5fa01e610795a1e25b468a7773b = L.marker(
+                [51.360645, -0.10355],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_adfabf3bf8cfdfb751a1a51e26a427d2 = L.popup({"maxWidth": 450});
+
+        
+            var html_607fd6beafd1af2ec45baafc6a57efd3 = $(`<div id="html_607fd6beafd1af2ec45baafc6a57efd3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_adfabf3bf8cfdfb751a1a51e26a427d2.setContent(html_607fd6beafd1af2ec45baafc6a57efd3);
+        
+
+        marker_41f6b5fa01e610795a1e25b468a7773b.bindPopup(popup_adfabf3bf8cfdfb751a1a51e26a427d2)
+        ;
+
+        
+    
+    
+            var marker_2bbd71ed32997fc704c3b4a154e06207 = L.marker(
+                [51.487612, -0.222909],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_ba412be532fdde4662a84882196be45f = L.popup({"maxWidth": 450});
+
+        
+            var html_d3a43995af1fc85e552d887425e2c501 = $(`<div id="html_d3a43995af1fc85e552d887425e2c501" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.9<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_ba412be532fdde4662a84882196be45f.setContent(html_d3a43995af1fc85e552d887425e2c501);
+        
+
+        marker_2bbd71ed32997fc704c3b4a154e06207.bindPopup(popup_ba412be532fdde4662a84882196be45f)
+        ;
+
+        
+    
+    
+            var marker_05d7ad5e071de291f4ae3af11b4628c4 = L.marker(
+                [51.422863, 0.13059],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_72ea58ed9f66e6a9ea20fa5f592d4fc9 = L.popup({"maxWidth": 450});
+
+        
+            var html_3f05fc23c8dcefa9a7e44943b1decfc6 = $(`<div id="html_3f05fc23c8dcefa9a7e44943b1decfc6" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.59<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_72ea58ed9f66e6a9ea20fa5f592d4fc9.setContent(html_3f05fc23c8dcefa9a7e44943b1decfc6);
+        
+
+        marker_05d7ad5e071de291f4ae3af11b4628c4.bindPopup(popup_72ea58ed9f66e6a9ea20fa5f592d4fc9)
+        ;
+
+        
+    
+    
+            var marker_53729df1ceccf7125b28d1c5fa536f16 = L.marker(
+                [51.558818, -0.08708],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2ef105119da0f7d1a90181812dcf7085 = L.popup({"maxWidth": 450});
+
+        
+            var html_d1d02c93d3c97ee7c22dd38431a09960 = $(`<div id="html_d1d02c93d3c97ee7c22dd38431a09960" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_2ef105119da0f7d1a90181812dcf7085.setContent(html_d1d02c93d3c97ee7c22dd38431a09960);
+        
+
+        marker_53729df1ceccf7125b28d1c5fa536f16.bindPopup(popup_2ef105119da0f7d1a90181812dcf7085)
+        ;
+
+        
+    
+    
+            var marker_2718a26daa97e26680026d232aa87339 = L.marker(
+                [51.458039, -0.066826],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0c5fe22e09c8b48d59ff41d992c0b3f2 = L.popup({"maxWidth": 450});
+
+        
+            var html_1a6cff98afba62814483c56c3ff2f898 = $(`<div id="html_1a6cff98afba62814483c56c3ff2f898" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.89<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_0c5fe22e09c8b48d59ff41d992c0b3f2.setContent(html_1a6cff98afba62814483c56c3ff2f898);
+        
+
+        marker_2718a26daa97e26680026d232aa87339.bindPopup(popup_0c5fe22e09c8b48d59ff41d992c0b3f2)
+        ;
+
+        
+    
+    
+            var marker_c0f3db6d8712d45250e67f19b93291fa = L.marker(
+                [51.640224, -0.138373],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_28f897389130ade3dbbb4014fa3277d5 = L.popup({"maxWidth": 450});
+
+        
+            var html_2b071d8e05f577fab9a6587675d8f3a7 = $(`<div id="html_2b071d8e05f577fab9a6587675d8f3a7" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.74<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_28f897389130ade3dbbb4014fa3277d5.setContent(html_2b071d8e05f577fab9a6587675d8f3a7);
+        
+
+        marker_c0f3db6d8712d45250e67f19b93291fa.bindPopup(popup_28f897389130ade3dbbb4014fa3277d5)
+        ;
+
+        
+    
+    
+            var marker_a7c2bcbe67ae9b018e0205fc8300f5aa = L.marker(
+                [51.476667, -0.214536],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_0d8d79966d5ccfe6cee315e6da112e80 = L.popup({"maxWidth": 450});
+
+        
+            var html_efcc476afefd4c6d8abf38c5b52f82bb = $(`<div id="html_efcc476afefd4c6d8abf38c5b52f82bb" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.9<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_0d8d79966d5ccfe6cee315e6da112e80.setContent(html_efcc476afefd4c6d8abf38c5b52f82bb);
+        
+
+        marker_a7c2bcbe67ae9b018e0205fc8300f5aa.bindPopup(popup_0d8d79966d5ccfe6cee315e6da112e80)
+        ;
+
+        
+    
+    
+            var marker_5f05ebf721af574bc33441e940c3d6a3 = L.marker(
+                [51.469594, -0.072845],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1beede43c221611795e0b0afb5bc8473 = L.popup({"maxWidth": 450});
+
+        
+            var html_298ee7413bc3d8aa8d4ce456eb4b228b = $(`<div id="html_298ee7413bc3d8aa8d4ce456eb4b228b" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.61<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_1beede43c221611795e0b0afb5bc8473.setContent(html_298ee7413bc3d8aa8d4ce456eb4b228b);
+        
+
+        marker_5f05ebf721af574bc33441e940c3d6a3.bindPopup(popup_1beede43c221611795e0b0afb5bc8473)
+        ;
+
+        
+    
+    
+            var marker_56aab64e91e01e1310daee443fc98efc = L.marker(
+                [51.600223, 0.162824],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_f68af561d8a5725c9ed59ca6296b7aa6 = L.popup({"maxWidth": 450});
+
+        
+            var html_24479798e4996be39df385406e9cb0b6 = $(`<div id="html_24479798e4996be39df385406e9cb0b6" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.58<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_f68af561d8a5725c9ed59ca6296b7aa6.setContent(html_24479798e4996be39df385406e9cb0b6);
+        
+
+        marker_56aab64e91e01e1310daee443fc98efc.bindPopup(popup_f68af561d8a5725c9ed59ca6296b7aa6)
+        ;
+
+        
+    
+    
+            var marker_00d5ee6e2450d0262d59ce80b1fd204a = L.marker(
+                [51.560988, -0.118412],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c776daff24de9ac2b2840eee1aedc45d = L.popup({"maxWidth": 450});
+
+        
+            var html_40cf5578a9febc679bf95916c987f034 = $(`<div id="html_40cf5578a9febc679bf95916c987f034" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_c776daff24de9ac2b2840eee1aedc45d.setContent(html_40cf5578a9febc679bf95916c987f034);
+        
+
+        marker_00d5ee6e2450d0262d59ce80b1fd204a.bindPopup(popup_c776daff24de9ac2b2840eee1aedc45d)
+        ;
+
+        
+    
+    
+            var marker_755fec491a51338d82e86a76a07f3c1c = L.marker(
+                [51.565154, -0.241501],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_f5d43f8b204a11376050277d1cc19fb2 = L.popup({"maxWidth": 450});
+
+        
+            var html_aa22d8ce2ddb608dd7522027fea18151 = $(`<div id="html_aa22d8ce2ddb608dd7522027fea18151" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.29<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_f5d43f8b204a11376050277d1cc19fb2.setContent(html_aa22d8ce2ddb608dd7522027fea18151);
+        
+
+        marker_755fec491a51338d82e86a76a07f3c1c.bindPopup(popup_f5d43f8b204a11376050277d1cc19fb2)
+        ;
+
+        
+    
+    
+            var marker_364b8f29d7f85ac5c1eb1ccf5216cde4 = L.marker(
+                [51.49175, -0.129936],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_964edfc2288b7b1569483a40513cf7cc = L.popup({"maxWidth": 450});
+
+        
+            var html_1259dd08d9ec7f4638e132d83f3542de = $(`<div id="html_1259dd08d9ec7f4638e132d83f3542de" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_964edfc2288b7b1569483a40513cf7cc.setContent(html_1259dd08d9ec7f4638e132d83f3542de);
+        
+
+        marker_364b8f29d7f85ac5c1eb1ccf5216cde4.bindPopup(popup_964edfc2288b7b1569483a40513cf7cc)
+        ;
+
+        
+    
+    
+            var marker_29ebebb5501667fa7e0283cfe3dd8a29 = L.marker(
+                [51.610549, -0.085267],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_8c00aeb3959b892db894a04faee969f8 = L.popup({"maxWidth": 450});
+
+        
+            var html_1cd118c9dd6bc24a771becabf355a53f = $(`<div id="html_1cd118c9dd6bc24a771becabf355a53f" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.56<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_8c00aeb3959b892db894a04faee969f8.setContent(html_1cd118c9dd6bc24a771becabf355a53f);
+        
+
+        marker_29ebebb5501667fa7e0283cfe3dd8a29.bindPopup(popup_8c00aeb3959b892db894a04faee969f8)
+        ;
+
+        
+    
+    
+            var marker_b7b5aeae2b64e93761843be5297a3756 = L.marker(
+                [51.449322, 0.088501],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_97971a076deca9b5e6e02d60e02dfb77 = L.popup({"maxWidth": 450});
+
+        
+            var html_a0fa6754bf59f1bfa6d5a3a89325239e = $(`<div id="html_a0fa6754bf59f1bfa6d5a3a89325239e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_97971a076deca9b5e6e02d60e02dfb77.setContent(html_a0fa6754bf59f1bfa6d5a3a89325239e);
+        
+
+        marker_b7b5aeae2b64e93761843be5297a3756.bindPopup(popup_97971a076deca9b5e6e02d60e02dfb77)
+        ;
+
+        
+    
+    
+            var marker_bf493c9b3c3516fb91be194895f941ff = L.marker(
+                [51.589517, -0.056341],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2fbee56496cb3855f0da609555fb223d = L.popup({"maxWidth": 450});
+
+        
+            var html_658b61599b7e63f154945e032cf33a58 = $(`<div id="html_658b61599b7e63f154945e032cf33a58" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.29<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_2fbee56496cb3855f0da609555fb223d.setContent(html_658b61599b7e63f154945e032cf33a58);
+        
+
+        marker_bf493c9b3c3516fb91be194895f941ff.bindPopup(popup_2fbee56496cb3855f0da609555fb223d)
+        ;
+
+        
+    
+    
+            var marker_5b543d953cfb8cf848c4502fe7ccf803 = L.marker(
+                [51.55712, 0.252257],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6e0bff84a1a227e090ed3f2de8b8857c = L.popup({"maxWidth": 450});
+
+        
+            var html_c2bed00e7a7145cde990be2bd2aa3842 = $(`<div id="html_c2bed00e7a7145cde990be2bd2aa3842" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_6e0bff84a1a227e090ed3f2de8b8857c.setContent(html_c2bed00e7a7145cde990be2bd2aa3842);
+        
+
+        marker_5b543d953cfb8cf848c4502fe7ccf803.bindPopup(popup_6e0bff84a1a227e090ed3f2de8b8857c)
+        ;
+
+        
+    
+    
+            var marker_9d96665497c0b714478ee3cfee6b8db5 = L.marker(
+                [51.490582, -0.166428],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a3edaa81b7215b9993520b882882386a = L.popup({"maxWidth": 450});
+
+        
+            var html_074449a3fd140ba2721c899c6345992d = $(`<div id="html_074449a3fd140ba2721c899c6345992d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_a3edaa81b7215b9993520b882882386a.setContent(html_074449a3fd140ba2721c899c6345992d);
+        
+
+        marker_9d96665497c0b714478ee3cfee6b8db5.bindPopup(popup_a3edaa81b7215b9993520b882882386a)
+        ;
+
+        
+    
+    
+            var marker_3770246285d4417d0e9d3499981f0b0d = L.marker(
+                [51.448593, -0.117452],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c9299877983697582ffbe9292d5da409 = L.popup({"maxWidth": 450});
+
+        
+            var html_b32ba225696fcd8d73e01338e71896d4 = $(`<div id="html_b32ba225696fcd8d73e01338e71896d4" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_c9299877983697582ffbe9292d5da409.setContent(html_b32ba225696fcd8d73e01338e71896d4);
+        
+
+        marker_3770246285d4417d0e9d3499981f0b0d.bindPopup(popup_c9299877983697582ffbe9292d5da409)
+        ;
+
+        
+    
+    
+            var marker_908b6eb6c5308101df77c6ae5631f11a = L.marker(
+                [51.489132, -0.280827],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9b1ab4527d025bc5c4aed6c04af92cc1 = L.popup({"maxWidth": 450});
+
+        
+            var html_079c2e59afb0fef8e8b73ab3abe27f15 = $(`<div id="html_079c2e59afb0fef8e8b73ab3abe27f15" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_9b1ab4527d025bc5c4aed6c04af92cc1.setContent(html_079c2e59afb0fef8e8b73ab3abe27f15);
+        
+
+        marker_908b6eb6c5308101df77c6ae5631f11a.bindPopup(popup_9b1ab4527d025bc5c4aed6c04af92cc1)
+        ;
+
+        
+    
+    
+            var marker_9955d18dad50805c93ce3e039822fe1f = L.marker(
+                [51.676728, -0.039721],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c1b7a58fae44772cf6ee372f0ed06b0a = L.popup({"maxWidth": 450});
+
+        
+            var html_f5e6dae738b73e1a9a32aa687527066d = $(`<div id="html_f5e6dae738b73e1a9a32aa687527066d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_c1b7a58fae44772cf6ee372f0ed06b0a.setContent(html_f5e6dae738b73e1a9a32aa687527066d);
+        
+
+        marker_9955d18dad50805c93ce3e039822fe1f.bindPopup(popup_c1b7a58fae44772cf6ee372f0ed06b0a)
+        ;
+
+        
+    
+    
+            var marker_5a17c87cd8896ca8eb7485c4d36b9406 = L.marker(
+                [51.53913, 0.117255],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_3fa4cb05a299a9cabd622e2dd7e02ae6 = L.popup({"maxWidth": 450});
+
+        
+            var html_d52b9804dd8b21c79c3b4df862fab34d = $(`<div id="html_d52b9804dd8b21c79c3b4df862fab34d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.66<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_3fa4cb05a299a9cabd622e2dd7e02ae6.setContent(html_d52b9804dd8b21c79c3b4df862fab34d);
+        
+
+        marker_5a17c87cd8896ca8eb7485c4d36b9406.bindPopup(popup_3fa4cb05a299a9cabd622e2dd7e02ae6)
+        ;
+
+        
+    
+    
+            var marker_d117b5c75d304629697084c7674d3fd2 = L.marker(
+                [51.530585, -0.045847],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_bbfe6457a121397a835c4f85fc5a1d84 = L.popup({"maxWidth": 450});
+
+        
+            var html_aa6f7a4a415e0e6ac8f164832ee67bf6 = $(`<div id="html_aa6f7a4a415e0e6ac8f164832ee67bf6" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_bbfe6457a121397a835c4f85fc5a1d84.setContent(html_aa6f7a4a415e0e6ac8f164832ee67bf6);
+        
+
+        marker_d117b5c75d304629697084c7674d3fd2.bindPopup(popup_bbfe6457a121397a835c4f85fc5a1d84)
+        ;
+
+        
+    
+    
+            var marker_94c8f54900c40021f777f7d180f7cad7 = L.marker(
+                [51.549516, -0.231878],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9e5a337a34ec57234947a02a499b43dd = L.popup({"maxWidth": 450});
+
+        
+            var html_7d790a8b497fa0fb237a290b446edac9 = $(`<div id="html_7d790a8b497fa0fb237a290b446edac9" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_9e5a337a34ec57234947a02a499b43dd.setContent(html_7d790a8b497fa0fb237a290b446edac9);
+        
+
+        marker_94c8f54900c40021f777f7d180f7cad7.bindPopup(popup_9e5a337a34ec57234947a02a499b43dd)
+        ;
+
+        
+    
+    
+            var marker_21535798c18aa57b96060a3a1834b1c8 = L.marker(
+                [51.353523, -0.132109],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_4a9efa6ff03e23e813cfbe6900401d3c = L.popup({"maxWidth": 450});
+
+        
+            var html_255011d68a7e1e05ff9a026dcf90f031 = $(`<div id="html_255011d68a7e1e05ff9a026dcf90f031" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.68<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:average. </div>`)[0];
+            popup_4a9efa6ff03e23e813cfbe6900401d3c.setContent(html_255011d68a7e1e05ff9a026dcf90f031);
+        
+
+        marker_21535798c18aa57b96060a3a1834b1c8.bindPopup(popup_4a9efa6ff03e23e813cfbe6900401d3c)
+        ;
+
+        
+    
+    
+            var marker_95205a71d0d6d85e37e5469729609d91 = L.marker(
+                [51.55664, 0.019811],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b8485e61791e1803643a677636d9c70e = L.popup({"maxWidth": 450});
+
+        
+            var html_d312f281648f60d772ea7c93161ab76d = $(`<div id="html_d312f281648f60d772ea7c93161ab76d" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_b8485e61791e1803643a677636d9c70e.setContent(html_d312f281648f60d772ea7c93161ab76d);
+        
+
+        marker_95205a71d0d6d85e37e5469729609d91.bindPopup(popup_b8485e61791e1803643a677636d9c70e)
+        ;
+
+        
+    
+    
+            var marker_5645d68197e571abf97f1a2008a7e0b6 = L.marker(
+                [51.522028, 0.205477],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_94671ebb170955f9b377f8227b47aaaa = L.popup({"maxWidth": 450});
+
+        
+            var html_f915f1d1db3cdea86dbcad53d1a2bc53 = $(`<div id="html_f915f1d1db3cdea86dbcad53d1a2bc53" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.61<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_94671ebb170955f9b377f8227b47aaaa.setContent(html_f915f1d1db3cdea86dbcad53d1a2bc53);
+        
+
+        marker_5645d68197e571abf97f1a2008a7e0b6.bindPopup(popup_94671ebb170955f9b377f8227b47aaaa)
+        ;
+
+        
+    
+    
+            var marker_48933f16e78dbf4ff1d9e11e504230d3 = L.marker(
+                [51.438788, -0.11561],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_4addbf53835e9818955763cd48db7cd8 = L.popup({"maxWidth": 450});
+
+        
+            var html_f3d5ff0fb2329851e094799017c270b3 = $(`<div id="html_f3d5ff0fb2329851e094799017c270b3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.91<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_4addbf53835e9818955763cd48db7cd8.setContent(html_f3d5ff0fb2329851e094799017c270b3);
+        
+
+        marker_48933f16e78dbf4ff1d9e11e504230d3.bindPopup(popup_4addbf53835e9818955763cd48db7cd8)
+        ;
+
+        
+    
+    
+            var marker_aa956ce81b496a05a1c29c8e813e76e7 = L.marker(
+                [51.392934, -0.103308],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1af8b8387670cb4f68c7133b14eb5337 = L.popup({"maxWidth": 450});
+
+        
+            var html_72b8a65df88c6eb7e689afc72ccaa544 = $(`<div id="html_72b8a65df88c6eb7e689afc72ccaa544" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.53<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_1af8b8387670cb4f68c7133b14eb5337.setContent(html_72b8a65df88c6eb7e689afc72ccaa544);
+        
+
+        marker_aa956ce81b496a05a1c29c8e813e76e7.bindPopup(popup_1af8b8387670cb4f68c7133b14eb5337)
+        ;
+
+        
+    
+    
+            var marker_3c2c765b57ca4ef0d01283cd841f2948 = L.marker(
+                [51.568037, 0.098006],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c04ac15a76e3b7f821c94e787277cbdb = L.popup({"maxWidth": 450});
+
+        
+            var html_a28abe4b35e2bf6183db9d1b450ed864 = $(`<div id="html_a28abe4b35e2bf6183db9d1b450ed864" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_c04ac15a76e3b7f821c94e787277cbdb.setContent(html_a28abe4b35e2bf6183db9d1b450ed864);
+        
+
+        marker_3c2c765b57ca4ef0d01283cd841f2948.bindPopup(popup_c04ac15a76e3b7f821c94e787277cbdb)
+        ;
+
+        
+    
+    
+            var marker_366d8f6d9708055df72baaa7d345649c = L.marker(
+                [51.55624, -0.306053],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c42b8cc4292d2d48f25abab813ca1f4d = L.popup({"maxWidth": 450});
+
+        
+            var html_7bb60ce73f92c77f05a66b40812f6a02 = $(`<div id="html_7bb60ce73f92c77f05a66b40812f6a02" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_c42b8cc4292d2d48f25abab813ca1f4d.setContent(html_7bb60ce73f92c77f05a66b40812f6a02);
+        
+
+        marker_366d8f6d9708055df72baaa7d345649c.bindPopup(popup_c42b8cc4292d2d48f25abab813ca1f4d)
+        ;
+
+        
+    
+    
+            var marker_26d46b641c59d1749fd45a21c7196e8d = L.marker(
+                [51.463466, -0.141659],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_7927cff1beaef8c82b00ed5e98e1247b = L.popup({"maxWidth": 450});
+
+        
+            var html_3367a932c4cb704b64a9b46e772c35fe = $(`<div id="html_3367a932c4cb704b64a9b46e772c35fe" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.73<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_7927cff1beaef8c82b00ed5e98e1247b.setContent(html_3367a932c4cb704b64a9b46e772c35fe);
+        
+
+        marker_26d46b641c59d1749fd45a21c7196e8d.bindPopup(popup_7927cff1beaef8c82b00ed5e98e1247b)
+        ;
+
+        
+    
+    
+            var marker_97dd6d863f1c5442d79bf8f32dcb3e7e = L.marker(
+                [51.62355, -0.137697],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_4b741d81248c54c32f804e3f53250d25 = L.popup({"maxWidth": 450});
+
+        
+            var html_9789d088e5303055c69ab029fd40c364 = $(`<div id="html_9789d088e5303055c69ab029fd40c364" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_4b741d81248c54c32f804e3f53250d25.setContent(html_9789d088e5303055c69ab029fd40c364);
+        
+
+        marker_97dd6d863f1c5442d79bf8f32dcb3e7e.bindPopup(popup_4b741d81248c54c32f804e3f53250d25)
+        ;
+
+        
+    
+    
+            var marker_6ed7df4563d6ec24ad9d94a85ee49bb4 = L.marker(
+                [51.555262, -0.214677],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_21182682be0cccae29618f9b0f077cc0 = L.popup({"maxWidth": 450});
+
+        
+            var html_01d4db5ca44f5fa8e265b87a74ab837e = $(`<div id="html_01d4db5ca44f5fa8e265b87a74ab837e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_21182682be0cccae29618f9b0f077cc0.setContent(html_01d4db5ca44f5fa8e265b87a74ab837e);
+        
+
+        marker_6ed7df4563d6ec24ad9d94a85ee49bb4.bindPopup(popup_21182682be0cccae29618f9b0f077cc0)
+        ;
+
+        
+    
+    
+            var marker_d4bdd628227e6d102049c150d2a9b148 = L.marker(
+                [51.539962, -0.111578],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9ed4d5d3741278d7983201fc2e83fcdc = L.popup({"maxWidth": 450});
+
+        
+            var html_fb4d20b8a89ab40a6565d29ac8d47776 = $(`<div id="html_fb4d20b8a89ab40a6565d29ac8d47776" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_9ed4d5d3741278d7983201fc2e83fcdc.setContent(html_fb4d20b8a89ab40a6565d29ac8d47776);
+        
+
+        marker_d4bdd628227e6d102049c150d2a9b148.bindPopup(popup_9ed4d5d3741278d7983201fc2e83fcdc)
+        ;
+
+        
+    
+    
+            var marker_9954fa891e16cc3ec6b722c64f5a9105 = L.marker(
+                [51.401996, 0.017447],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_658c82de4d2ebb0da90e305370981fc0 = L.popup({"maxWidth": 450});
+
+        
+            var html_24a9cfba38b5d94d4d91102e771f897e = $(`<div id="html_24a9cfba38b5d94d4d91102e771f897e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.55<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:medium<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_658c82de4d2ebb0da90e305370981fc0.setContent(html_24a9cfba38b5d94d4d91102e771f897e);
+        
+
+        marker_9954fa891e16cc3ec6b722c64f5a9105.bindPopup(popup_658c82de4d2ebb0da90e305370981fc0)
+        ;
+
+        
+    
+    
+            var marker_78684eb5bf89d41b715efc0a841ee91a = L.marker(
+                [51.526981, -0.211675],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a986c3a6921a96185d43df4cc0cfda51 = L.popup({"maxWidth": 450});
+
+        
+            var html_155fa9b621af9ceba36f2778b796aec3 = $(`<div id="html_155fa9b621af9ceba36f2778b796aec3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_a986c3a6921a96185d43df4cc0cfda51.setContent(html_155fa9b621af9ceba36f2778b796aec3);
+        
+
+        marker_78684eb5bf89d41b715efc0a841ee91a.bindPopup(popup_a986c3a6921a96185d43df4cc0cfda51)
+        ;
+
+        
+    
+    
+            var marker_225847f96db387339fe0a2b99674246b = L.marker(
+                [51.541296, 0.014705],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c4765a50b73e7feff0e7941ae434a2fe = L.popup({"maxWidth": 450});
+
+        
+            var html_46f855f0fb54292156965776f470ce39 = $(`<div id="html_46f855f0fb54292156965776f470ce39" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.73<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_c4765a50b73e7feff0e7941ae434a2fe.setContent(html_46f855f0fb54292156965776f470ce39);
+        
+
+        marker_225847f96db387339fe0a2b99674246b.bindPopup(popup_c4765a50b73e7feff0e7941ae434a2fe)
+        ;
+
+        
+    
+    
+            var marker_4f97ad242b443f0b1c207ecaf5afce75 = L.marker(
+                [51.52287, 0.014194],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2e65475b8b01fedd17c019acca617ab4 = L.popup({"maxWidth": 450});
+
+        
+            var html_6b7362c2c402193922cfa50a6bf5d7d0 = $(`<div id="html_6b7362c2c402193922cfa50a6bf5d7d0" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.7<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_2e65475b8b01fedd17c019acca617ab4.setContent(html_6b7362c2c402193922cfa50a6bf5d7d0);
+        
+
+        marker_4f97ad242b443f0b1c207ecaf5afce75.bindPopup(popup_2e65475b8b01fedd17c019acca617ab4)
+        ;
+
+        
+    
+    
+            var marker_ee0e42eaaa3e00cce87b037e71609834 = L.marker(
+                [51.384031, -0.297717],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b8b2172aad9866f3c0b217df3bb8b5c6 = L.popup({"maxWidth": 450});
+
+        
+            var html_623a9804b69f336cd937a6397edcb005 = $(`<div id="html_623a9804b69f336cd937a6397edcb005" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.92<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_b8b2172aad9866f3c0b217df3bb8b5c6.setContent(html_623a9804b69f336cd937a6397edcb005);
+        
+
+        marker_ee0e42eaaa3e00cce87b037e71609834.bindPopup(popup_b8b2172aad9866f3c0b217df3bb8b5c6)
+        ;
+
+        
+    
+    
+            var marker_4a4616c8b2c64dfb68beb529dfa96d52 = L.marker(
+                [51.6073, -0.356835],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9c37c8ad788ad58a49e9f2b62423ab6c = L.popup({"maxWidth": 450});
+
+        
+            var html_9aa8f9c223bb35411c73725dfd8f4e04 = $(`<div id="html_9aa8f9c223bb35411c73725dfd8f4e04" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.76<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_9c37c8ad788ad58a49e9f2b62423ab6c.setContent(html_9aa8f9c223bb35411c73725dfd8f4e04);
+        
+
+        marker_4a4616c8b2c64dfb68beb529dfa96d52.bindPopup(popup_9c37c8ad788ad58a49e9f2b62423ab6c)
+        ;
+
+        
+    
+    
+            var marker_58e40279022f8338755050a5f551556c = L.marker(
+                [51.557368, 0.119718],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c99fef67ac98351b29cef5c3615fad07 = L.popup({"maxWidth": 450});
+
+        
+            var html_c453a09dc867b0363db62e307c9d54bd = $(`<div id="html_c453a09dc867b0363db62e307c9d54bd" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_c99fef67ac98351b29cef5c3615fad07.setContent(html_c453a09dc867b0363db62e307c9d54bd);
+        
+
+        marker_58e40279022f8338755050a5f551556c.bindPopup(popup_c99fef67ac98351b29cef5c3615fad07)
+        ;
+
+        
+    
+    
+            var marker_591368c5be14efd52b8750539aa1ec36 = L.marker(
+                [51.601715, -0.064239],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_bac4f7aecebfb1fa97abf6998d535f00 = L.popup({"maxWidth": 450});
+
+        
+            var html_91e239751a7d60efb4ec1e4a89382196 = $(`<div id="html_91e239751a7d60efb4ec1e4a89382196" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.52<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_bac4f7aecebfb1fa97abf6998d535f00.setContent(html_91e239751a7d60efb4ec1e4a89382196);
+        
+
+        marker_591368c5be14efd52b8750539aa1ec36.bindPopup(popup_bac4f7aecebfb1fa97abf6998d535f00)
+        ;
+
+        
+    
+    
+            var marker_6c575eadaed3a374341c91ead02e8bd3 = L.marker(
+                [51.649323, -0.162285],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c62cb09004814973b92cff1e047e1952 = L.popup({"maxWidth": 450});
+
+        
+            var html_ed0833ab8bae1d88c91c199a9cacb658 = $(`<div id="html_ed0833ab8bae1d88c91c199a9cacb658" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.89<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_c62cb09004814973b92cff1e047e1952.setContent(html_ed0833ab8bae1d88c91c199a9cacb658);
+        
+
+        marker_6c575eadaed3a374341c91ead02e8bd3.bindPopup(popup_c62cb09004814973b92cff1e047e1952)
+        ;
+
+        
+    
+    
+            var marker_1671f8ec92d2d1b1c5e3e8d39715adb7 = L.marker(
+                [51.411433, -0.270183],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_9c6e3a30dc1695d17a0ddbf2259f3060 = L.popup({"maxWidth": 450});
+
+        
+            var html_036a8ae9f20fc1ebf1fbc8110d72f736 = $(`<div id="html_036a8ae9f20fc1ebf1fbc8110d72f736" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_9c6e3a30dc1695d17a0ddbf2259f3060.setContent(html_036a8ae9f20fc1ebf1fbc8110d72f736);
+        
+
+        marker_1671f8ec92d2d1b1c5e3e8d39715adb7.bindPopup(popup_9c6e3a30dc1695d17a0ddbf2259f3060)
+        ;
+
+        
+    
+    
+            var marker_a2ddc038c3ed68cadbce8d19781a96cb = L.marker(
+                [51.466358, -0.145976],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_b40fc69ed96f518f31a22649043241d1 = L.popup({"maxWidth": 450});
+
+        
+            var html_d2203259a871b87b4dfe6af3168490d3 = $(`<div id="html_d2203259a871b87b4dfe6af3168490d3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_b40fc69ed96f518f31a22649043241d1.setContent(html_d2203259a871b87b4dfe6af3168490d3);
+        
+
+        marker_a2ddc038c3ed68cadbce8d19781a96cb.bindPopup(popup_b40fc69ed96f518f31a22649043241d1)
+        ;
+
+        
+    
+    
+            var marker_df269252a649edd5402afbf9b92da11c = L.marker(
+                [51.46282, 0.104104],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_4bdc556fcf3883e5a0af32c2da33005b = L.popup({"maxWidth": 450});
+
+        
+            var html_54d82a812682b1979dac8a64f540abeb = $(`<div id="html_54d82a812682b1979dac8a64f540abeb" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.93<br><b>Safety degree</b>: excellent<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_4bdc556fcf3883e5a0af32c2da33005b.setContent(html_54d82a812682b1979dac8a64f540abeb);
+        
+
+        marker_df269252a649edd5402afbf9b92da11c.bindPopup(popup_4bdc556fcf3883e5a0af32c2da33005b)
+        ;
+
+        
+    
+    
+            var marker_2576a66c65c8e50193a47bb821b1ffce = L.marker(
+                [51.376507, -0.168504],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_7bc49af979dda2325d731e9da981280f = L.popup({"maxWidth": 450});
+
+        
+            var html_ab5da164285d1541adfea164098e541c = $(`<div id="html_ab5da164285d1541adfea164098e541c" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.79<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_7bc49af979dda2325d731e9da981280f.setContent(html_ab5da164285d1541adfea164098e541c);
+        
+
+        marker_2576a66c65c8e50193a47bb821b1ffce.bindPopup(popup_7bc49af979dda2325d731e9da981280f)
+        ;
+
+        
+    
+    
+            var marker_139f86d6a9cbe6ba9ad112235d18fdb1 = L.marker(
+                [51.513532, -0.163662],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_86d8ffe08dc16498319819c1b748ab25 = L.popup({"maxWidth": 450});
+
+        
+            var html_06398a62cc1cb178b340772411923077 = $(`<div id="html_06398a62cc1cb178b340772411923077" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_86d8ffe08dc16498319819c1b748ab25.setContent(html_06398a62cc1cb178b340772411923077);
+        
+
+        marker_139f86d6a9cbe6ba9ad112235d18fdb1.bindPopup(popup_86d8ffe08dc16498319819c1b748ab25)
+        ;
+
+        
+    
+    
+            var marker_74358dca7640a7e6900907380c807ab3 = L.marker(
+                [51.544193, -0.191199],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_24260df3763f29d4fdd559e217c3dbd6 = L.popup({"maxWidth": 450});
+
+        
+            var html_5b7fc9716c270534c3faa431320a40dd = $(`<div id="html_5b7fc9716c270534c3faa431320a40dd" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_24260df3763f29d4fdd559e217c3dbd6.setContent(html_5b7fc9716c270534c3faa431320a40dd);
+        
+
+        marker_74358dca7640a7e6900907380c807ab3.bindPopup(popup_24260df3763f29d4fdd559e217c3dbd6)
+        ;
+
+        
+    
+    
+            var marker_5eef92077627705bb1aa216fbb621a74 = L.marker(
+                [51.511488, 0.12315],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_7e66a071a3fc8d081ecc03c15462affd = L.popup({"maxWidth": 450});
+
+        
+            var html_70ec35820074e83566a31b02622e1dc3 = $(`<div id="html_70ec35820074e83566a31b02622e1dc3" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.55<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_7e66a071a3fc8d081ecc03c15462affd.setContent(html_70ec35820074e83566a31b02622e1dc3);
+        
+
+        marker_5eef92077627705bb1aa216fbb621a74.bindPopup(popup_7e66a071a3fc8d081ecc03c15462affd)
+        ;
+
+        
+    
+    
+            var marker_b29b0f1ebc8d715cbf65c7b1a2988ae1 = L.marker(
+                [51.548827, -0.084341],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6ed4a89d1a4c14d3c8c4facf0f104379 = L.popup({"maxWidth": 450});
+
+        
+            var html_f1219f4be9ad6734837bf7fe707c00d2 = $(`<div id="html_f1219f4be9ad6734837bf7fe707c00d2" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.75<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_6ed4a89d1a4c14d3c8c4facf0f104379.setContent(html_f1219f4be9ad6734837bf7fe707c00d2);
+        
+
+        marker_b29b0f1ebc8d715cbf65c7b1a2988ae1.bindPopup(popup_6ed4a89d1a4c14d3c8c4facf0f104379)
+        ;
+
+        
+    
+    
+            var marker_5d4c8bb5c033142bcc6ddf58b4ea4acf = L.marker(
+                [51.487586, -0.134413],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_dbc49eb9ad28d9b9835106aa614e58ca = L.popup({"maxWidth": 450});
+
+        
+            var html_2583cdd71e3eab5c8818cdd82f129a34 = $(`<div id="html_2583cdd71e3eab5c8818cdd82f129a34" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.85<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_dbc49eb9ad28d9b9835106aa614e58ca.setContent(html_2583cdd71e3eab5c8818cdd82f129a34);
+        
+
+        marker_5d4c8bb5c033142bcc6ddf58b4ea4acf.bindPopup(popup_dbc49eb9ad28d9b9835106aa614e58ca)
+        ;
+
+        
+    
+    
+            var marker_553c372135b661704ce812b0f0e9a19d = L.marker(
+                [51.406299, -0.306581],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_f66725ba6e962368abcdb7a3699b8d98 = L.popup({"maxWidth": 450});
+
+        
+            var html_c210bba0fd1b23ac28dd810da5fdac5e = $(`<div id="html_c210bba0fd1b23ac28dd810da5fdac5e" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.61<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_f66725ba6e962368abcdb7a3699b8d98.setContent(html_c210bba0fd1b23ac28dd810da5fdac5e);
+        
+
+        marker_553c372135b661704ce812b0f0e9a19d.bindPopup(popup_f66725ba6e962368abcdb7a3699b8d98)
+        ;
+
+        
+    
+    
+            var marker_491795767d19bfc565f6f4e206df97b3 = L.marker(
+                [51.497975, -0.15789],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_c58c71280f3004deed5a9137f86d1bb7 = L.popup({"maxWidth": 450});
+
+        
+            var html_91705ad58b04c4445798a245026eec35 = $(`<div id="html_91705ad58b04c4445798a245026eec35" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.66<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_c58c71280f3004deed5a9137f86d1bb7.setContent(html_91705ad58b04c4445798a245026eec35);
+        
+
+        marker_491795767d19bfc565f6f4e206df97b3.bindPopup(popup_c58c71280f3004deed5a9137f86d1bb7)
+        ;
+
+        
+    
+    
+            var marker_adedc66bfc6a017c5781290283247fed = L.marker(
+                [51.525024, -0.030012],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_f5feb26c6cf4e50bceee80fa04ae43ec = L.popup({"maxWidth": 450});
+
+        
+            var html_a808f60b696f9d2c67d7afd775191442 = $(`<div id="html_a808f60b696f9d2c67d7afd775191442" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.75<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_f5feb26c6cf4e50bceee80fa04ae43ec.setContent(html_a808f60b696f9d2c67d7afd775191442);
+        
+
+        marker_adedc66bfc6a017c5781290283247fed.bindPopup(popup_f5feb26c6cf4e50bceee80fa04ae43ec)
+        ;
+
+        
+    
+    
+            var marker_888ec32f7f2d8b20fcecb46a03f40fc4 = L.marker(
+                [51.439601, -0.088037],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_dec2459b210b4593da8f49812ffd9ba3 = L.popup({"maxWidth": 450});
+
+        
+            var html_70dc7e587cb315ca45a8180ff5c1a812 = $(`<div id="html_70dc7e587cb315ca45a8180ff5c1a812" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.61<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:excellent<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_dec2459b210b4593da8f49812ffd9ba3.setContent(html_70dc7e587cb315ca45a8180ff5c1a812);
+        
+
+        marker_888ec32f7f2d8b20fcecb46a03f40fc4.bindPopup(popup_dec2459b210b4593da8f49812ffd9ba3)
+        ;
+
+        
+    
+    
+            var marker_3c0203087a89c7ed44141c631320c5f7 = L.marker(
+                [51.447982, -0.44364],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_6b6c4517e0bc44c73bd2aa8a6ab2dde4 = L.popup({"maxWidth": 450});
+
+        
+            var html_7821cd17da3199edf9bd1c7191cb3bd6 = $(`<div id="html_7821cd17da3199edf9bd1c7191cb3bd6" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.38<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:average<br><b>Medical degree</b>:average<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_6b6c4517e0bc44c73bd2aa8a6ab2dde4.setContent(html_7821cd17da3199edf9bd1c7191cb3bd6);
+        
+
+        marker_3c0203087a89c7ed44141c631320c5f7.bindPopup(popup_6b6c4517e0bc44c73bd2aa8a6ab2dde4)
+        ;
+
+        
+    
+    
+            var marker_0564ff718c7fc1839cda966ca61e9e61 = L.marker(
+                [51.379555, -0.00383],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_29cf5f823e1b13989700f3d04a916cc5 = L.popup({"maxWidth": 450});
+
+        
+            var html_4aa794a78192067f8502090224adf835 = $(`<div id="html_4aa794a78192067f8502090224adf835" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.8<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_29cf5f823e1b13989700f3d04a916cc5.setContent(html_4aa794a78192067f8502090224adf835);
+        
+
+        marker_0564ff718c7fc1839cda966ca61e9e61.bindPopup(popup_29cf5f823e1b13989700f3d04a916cc5)
+        ;
+
+        
+    
+    
+            var marker_0b51b52d5d3937de6dbbfcbafce99d84 = L.marker(
+                [51.533533, -0.09385],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_64583d4b339c7028bc607868f589410f = L.popup({"maxWidth": 450});
+
+        
+            var html_5234c2a36ec7109778333a8d12376d59 = $(`<div id="html_5234c2a36ec7109778333a8d12376d59" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.81<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_64583d4b339c7028bc607868f589410f.setContent(html_5234c2a36ec7109778333a8d12376d59);
+        
+
+        marker_0b51b52d5d3937de6dbbfcbafce99d84.bindPopup(popup_64583d4b339c7028bc607868f589410f)
+        ;
+
+        
+    
+    
+            var marker_b341439dbe604b7e390c3749a7ce92c0 = L.marker(
+                [51.632362, -0.048499],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_a13544a8e6aacb274269477af23ec0e1 = L.popup({"maxWidth": 450});
+
+        
+            var html_e0c2490711f3bda7c247e7cf6785515c = $(`<div id="html_e0c2490711f3bda7c247e7cf6785515c" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.65<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_a13544a8e6aacb274269477af23ec0e1.setContent(html_e0c2490711f3bda7c247e7cf6785515c);
+        
+
+        marker_b341439dbe604b7e390c3749a7ce92c0.bindPopup(popup_a13544a8e6aacb274269477af23ec0e1)
+        ;
+
+        
+    
+    
+            var marker_c6d643c961438fb6b60faac471427de2 = L.marker(
+                [51.50692, -0.309381],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_abb577c4eae759684643682b0d1122fe = L.popup({"maxWidth": 450});
+
+        
+            var html_8de04c777aa827cb2c9dbc0c8bf1d756 = $(`<div id="html_8de04c777aa827cb2c9dbc0c8bf1d756" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.89<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_abb577c4eae759684643682b0d1122fe.setContent(html_8de04c777aa827cb2c9dbc0c8bf1d756);
+        
+
+        marker_c6d643c961438fb6b60faac471427de2.bindPopup(popup_abb577c4eae759684643682b0d1122fe)
+        ;
+
+        
+    
+    
+            var marker_a497a69c8fecffbeeacf4cea40396d87 = L.marker(
+                [51.585732, -0.343699],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_13858366eb03a57407a0586f315da82f = L.popup({"maxWidth": 450});
+
+        
+            var html_bfbebd1366e8f387760e0dd40b677cfc = $(`<div id="html_bfbebd1366e8f387760e0dd40b677cfc" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.87<br><b>Safety degree</b>: good<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:excellent<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_13858366eb03a57407a0586f315da82f.setContent(html_bfbebd1366e8f387760e0dd40b677cfc);
+        
+
+        marker_a497a69c8fecffbeeacf4cea40396d87.bindPopup(popup_13858366eb03a57407a0586f315da82f)
+        ;
+
+        
+    
+    
+            var marker_427e5e1ce013683804acb85e138315c6 = L.marker(
+                [51.561247, 0.106076],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1eb7e9b7228b688a1cab1e30ce015b6f = L.popup({"maxWidth": 450});
+
+        
+            var html_a859949b506b846fcbdaae4a4f42deef = $(`<div id="html_a859949b506b846fcbdaae4a4f42deef" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_1eb7e9b7228b688a1cab1e30ce015b6f.setContent(html_a859949b506b846fcbdaae4a4f42deef);
+        
+
+        marker_427e5e1ce013683804acb85e138315c6.bindPopup(popup_1eb7e9b7228b688a1cab1e30ce015b6f)
+        ;
+
+        
+    
+    
+            var marker_aaa3218146af5a9c8d850770889d2a36 = L.marker(
+                [51.509027, -0.06304],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_fabd315298eee927edcbd48f1f8cf987 = L.popup({"maxWidth": 450});
+
+        
+            var html_436816ce178b299699a5a0de1b2650c5 = $(`<div id="html_436816ce178b299699a5a0de1b2650c5" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_fabd315298eee927edcbd48f1f8cf987.setContent(html_436816ce178b299699a5a0de1b2650c5);
+        
+
+        marker_aaa3218146af5a9c8d850770889d2a36.bindPopup(popup_fabd315298eee927edcbd48f1f8cf987)
+        ;
+
+        
+    
+    
+            var marker_58f044aa3bb8168b99a45255859527b6 = L.marker(
+                [51.584214, -0.001874],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_97e50ce75540edd09177c35cc8de930e = L.popup({"maxWidth": 450});
+
+        
+            var html_5711159c8a83519f124b61cee7fed284 = $(`<div id="html_5711159c8a83519f124b61cee7fed284" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_97e50ce75540edd09177c35cc8de930e.setContent(html_5711159c8a83519f124b61cee7fed284);
+        
+
+        marker_58f044aa3bb8168b99a45255859527b6.bindPopup(popup_97e50ce75540edd09177c35cc8de930e)
+        ;
+
+        
+    
+    
+            var marker_e06f4b251aa8d6490c498df92a6294f0 = L.marker(
+                [51.545852, 0.15211],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_e5d65733035f4e3623457414be71ec69 = L.popup({"maxWidth": 450});
+
+        
+            var html_4102b07b7c2752af12aa667d9de26688 = $(`<div id="html_4102b07b7c2752af12aa667d9de26688" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.49<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:good<br><b>AQI</b>:good<br><b>IMD</b>:average. </div>`)[0];
+            popup_e5d65733035f4e3623457414be71ec69.setContent(html_4102b07b7c2752af12aa667d9de26688);
+        
+
+        marker_e06f4b251aa8d6490c498df92a6294f0.bindPopup(popup_e5d65733035f4e3623457414be71ec69)
+        ;
+
+        
+    
+    
+            var marker_c931101ff11fc3e32d76336fd365f806 = L.marker(
+                [51.585239, -0.090474],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_48df9dbc1edfb81970d7b06206e72912 = L.popup({"maxWidth": 450});
+
+        
+            var html_358ee7ea84566ee1053d020205d50ed5 = $(`<div id="html_358ee7ea84566ee1053d020205d50ed5" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.66<br><b>Safety degree</b>: average<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_48df9dbc1edfb81970d7b06206e72912.setContent(html_358ee7ea84566ee1053d020205d50ed5);
+        
+
+        marker_c931101ff11fc3e32d76336fd365f806.bindPopup(popup_48df9dbc1edfb81970d7b06206e72912)
+        ;
+
+        
+    
+    
+            var marker_1ea90e8fefad1b67b7621d5f78b01b57 = L.marker(
+                [51.449878, 0.135028],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_3f11f0244782c94f62acbf0abe8f6130 = L.popup({"maxWidth": 450});
+
+        
+            var html_86ac68e9403abffdd4c4e444d1282d54 = $(`<div id="html_86ac68e9403abffdd4c4e444d1282d54" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.82<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:good<br><b>AQI</b>:excellent<br><b>IMD</b>:excellent. </div>`)[0];
+            popup_3f11f0244782c94f62acbf0abe8f6130.setContent(html_86ac68e9403abffdd4c4e444d1282d54);
+        
+
+        marker_1ea90e8fefad1b67b7621d5f78b01b57.bindPopup(popup_3f11f0244782c94f62acbf0abe8f6130)
+        ;
+
+        
+    
+    
+            var marker_ab8c6b93ba9f868d268ca9ff94b45c19 = L.marker(
+                [51.489553, -0.100107],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_1909a8baca5d91f0a802c5a7dbf7c0b9 = L.popup({"maxWidth": 450});
+
+        
+            var html_5c40ad6883dd1c2ff7b560367e39d3ed = $(`<div id="html_5c40ad6883dd1c2ff7b560367e39d3ed" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.78<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:average. </div>`)[0];
+            popup_1909a8baca5d91f0a802c5a7dbf7c0b9.setContent(html_5c40ad6883dd1c2ff7b560367e39d3ed);
+        
+
+        marker_ab8c6b93ba9f868d268ca9ff94b45c19.bindPopup(popup_1909a8baca5d91f0a802c5a7dbf7c0b9)
+        ;
+
+        
+    
+    
+            var marker_249247c1231de6cc19185b5da934ef4c = L.marker(
+                [51.480122, -0.222408],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_2742aa6017c1c54f3a82622c6befb967 = L.popup({"maxWidth": 450});
+
+        
+            var html_e0c2677c5ca5e576dbd8f8e9e4a00815 = $(`<div id="html_e0c2677c5ca5e576dbd8f8e9e4a00815" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.84<br><b>Safety degree</b>: average<br><b>Crime rate</b>:low<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:good<br><b>IMD</b>:good. </div>`)[0];
+            popup_2742aa6017c1c54f3a82622c6befb967.setContent(html_e0c2677c5ca5e576dbd8f8e9e4a00815);
+        
+
+        marker_249247c1231de6cc19185b5da934ef4c.bindPopup(popup_2742aa6017c1c54f3a82622c6befb967)
+        ;
+
+        
+    
+    
+            var marker_64645f4d61e1558baa6cffcb1acb269b = L.marker(
+                [51.540628, -0.05766],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_fae7fce4c5802dbdedd1a27577595c15 = L.popup({"maxWidth": 450});
+
+        
+            var html_de87a35ad3f410861704f6549cd48d35 = $(`<div id="html_de87a35ad3f410861704f6549cd48d35" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.6<br><b>Safety degree</b>: fair<br><b>Crime rate</b>:high<br><b>Retail convenience</b>:average<br><b>Surroundings</b>:average<br><b>Medical degree</b>:excellent<br><b>AQI</b>:average<br><b>IMD</b>:good. </div>`)[0];
+            popup_fae7fce4c5802dbdedd1a27577595c15.setContent(html_de87a35ad3f410861704f6549cd48d35);
+        
+
+        marker_64645f4d61e1558baa6cffcb1acb269b.bindPopup(popup_fae7fce4c5802dbdedd1a27577595c15)
+        ;
+
+        
+    
+    
+            var marker_7fabccd8ef1ef17bbc68e6106de91274 = L.marker(
+                [51.407098, 0.010468],
+                {}
+            ).addTo(map_958b2c3e6c4da09cb0a996476758de9c);
+        
+    
+        var popup_19b5d6f51ad5a58884fa66e722410852 = L.popup({"maxWidth": 450});
+
+        
+            var html_90801d0d5bd357eae8760ffe89847c68 = $(`<div id="html_90801d0d5bd357eae8760ffe89847c68" style="width: 100.0%; height: 100.0%;"> <b>Urban safety factor</b>: 0.44<br><b>Safety degree</b>: poor<br><b>Crime rate</b>:medium<br><b>Retail convenience</b>:good<br><b>Surroundings</b>:good<br><b>Medical degree</b>:excellent<br><b>AQI</b>:excellent<br><b>IMD</b>:good. </div>`)[0];
+            popup_19b5d6f51ad5a58884fa66e722410852.setContent(html_90801d0d5bd357eae8760ffe89847c68);
+        
+
+        marker_7fabccd8ef1ef17bbc68e6106de91274.bindPopup(popup_19b5d6f51ad5a58884fa66e722410852)
+        ;
+
+        
+    
+</script>
